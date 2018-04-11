@@ -98,7 +98,9 @@
 /* Produtos
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .produtos {
+    background-blend-mode: darken;
     background-color: #ebebeb;
+    background-image: url(../img/texture-bw.png);
 }
 .box-produto {
     background-color: #F9FBFA;
