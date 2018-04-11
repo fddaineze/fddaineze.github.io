@@ -1,0 +1,192 @@
+/*
+**********************************************************
+*** Cliente: Cavaleiro (Zeus)
+*** Projeto: Website/E-commerce
+*** Autor: JimmyFilips
+*** Website: https://github.com/jimmyfilips
+**********************************************************
+*/
+
+/* Padrões
+–––-–––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+    padding: 6rem 0;
+    text-align: center;
+}
+.box {
+    padding: 3rem 0;
+}
+.titulo {
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 6rem;
+}
+.sub-titulo {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.texto {
+    font-size: 1.4rem;
+}
+
+/* Navbar Customização
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar-custom {
+    font-weight: bold;
+}
+.navbar-brand {
+    text-transform: uppercase;
+}
+.navbar-custom a {
+    color: #d0d0d0;
+}
+.navbar-custom a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.inicio img {
+    margin: 0 auto;
+    max-width: 500px;
+}
+.inicio p {
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+.parallax-window {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Quem Somos
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.quem-somos {
+    background-color: #efefef;
+}
+.quem-somos i {
+    font-size: 35pt;
+    text-align: right;
+}
+.quem-somos .sub-titulo {
+    text-align: left;
+}
+.quem-somos .texto {
+    margin-bottom: 30px;
+    text-align: left;
+}
+.quem-somos img {
+    margin-top: 40px;
+}
+
+/* Produtos
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.produtos {
+    background-color: #ebebeb;
+}
+.produtos .box {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 6px 6px;
+}
+.produtos .sub-titulo {
+    text-transform: uppercase;
+}
+.produtos .preco {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* Perguntas Frequentes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.perguntas-frequentes {
+    background-color: #efefef;
+}
+.perguntas-frequentes .faq {
+    border-left: 2px solid #71d65d;
+    border-radius: 10px;
+    border-right: 2px solid #71d65d;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    margin-bottom: -10px;
+    overflow: hidden;
+}
+.perguntas-frequentes .faq .pergunta {
+    background-color: #71d65d;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+.perguntas-frequentes .faq .resposta {
+    background-color: white;
+    font-size: 11pt;
+    margin-bottom: 0;
+    margin-top: -10px;
+    padding: 2rem 15px;
+}
+.perguntas-frequentes .faq .border-bottom {
+    border-bottom: 2px solid #71d65d;
+}
+
+/* Rodapé
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  background: url(../img/background-footer.jpg) no-repeat center;
+  background-size: 100%;
+  padding: 25px 0 10px 0;
+}
+footer .texto {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+footer a {
+  color: #71d65d;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #66c054;
+}
+footer .texto:first-child::after {
+	background: #555;
+	content: '';
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    top: 15px;
+	width: 200px;
+}
+
+/* Pace Loading
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #71d65d;
+  height: 2px;
+  position: fixed;
+  right: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
