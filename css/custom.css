@@ -44,12 +44,18 @@
     color: white;
     text-decoration: none;
 }
+.navbar-inverse {
+    background-color: rgb(34,34,34);
+    background-color: rgba(34,34,34,0.92);
+    border-bottom: 0;
+}
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .inicio img {
     margin: 0 auto;
     max-width: 500px;
+    width: 100%;
 }
 .inicio p {
     color: white;
@@ -74,9 +80,6 @@
     font-size: 35pt;
     text-align: right;
 }
-.quem-somos .sub-titulo {
-    text-align: left;
-}
 .quem-somos .texto {
     margin-bottom: 30px;
     text-align: left;
@@ -84,11 +87,22 @@
 .quem-somos img {
     margin-top: 40px;
 }
+@media (min-width: 992px) {
+    .quem-somos .sub-titulo {
+        text-align: left;
+    }
+}
+@media (max-width: 992px) {
+    .quem-somos img {
+        margin-bottom: 40px;
+    }
+}
 
 /* Produtos
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .produtos {
     background-color: #ebebeb;
+    padding-bottom: 10rem;
 }
 .produtos .box {
     background-color: rgb(255, 255, 255);
@@ -103,6 +117,12 @@
     font-weight: bold;
     margin-bottom: 0;
     text-transform: uppercase;
+}
+.vantagens .fa-check {
+    color: #71d65d;
+}
+.vantagens .fa-remove {
+    color: #d12525;
 }
 
 /* Perguntas Frequentes
