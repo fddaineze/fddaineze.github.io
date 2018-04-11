@@ -102,12 +102,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .produtos {
     background-color: #ebebeb;
-    padding-bottom: 10rem;
 }
 .produtos .box {
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 0 0 6px 6px;
+    margin-bottom: 4rem;
 }
 .produtos .sub-titulo {
     text-transform: uppercase;
@@ -130,30 +130,63 @@
 .perguntas-frequentes {
     background-color: #efefef;
 }
-.perguntas-frequentes .faq {
-    border-left: 2px solid #71d65d;
-    border-radius: 10px;
-    border-right: 2px solid #71d65d;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    margin-bottom: -10px;
-    overflow: hidden;
+.ativador-input { 
+    display: none; 
 }
-.perguntas-frequentes .faq .pergunta {
-    background-color: #71d65d;
-    color: white;
-    font-size: 15pt;
-    font-weight: bold;
-    padding: 5px 15px;
+.etiqueta {
+    align-content: center;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(50, 50, 90,.1);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.17em;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    transition: all 0.4s;
+    width: 95%;
 }
-.perguntas-frequentes .faq .resposta {
-    background-color: white;
-    font-size: 11pt;
-    margin-bottom: 0;
-    margin-top: -10px;
-    padding: 2rem 15px;
+.etiqueta p {
+    margin: auto 0;
+	display: inline-block;
 }
-.perguntas-frequentes .faq .border-bottom {
-    border-bottom: 2px solid #71d65d;
+.etiqueta .ico {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    color: #71d65d;
+    font-size: 26.6pt;
+    width:26.6pt;
+}
+.etiqueta .title {
+    margin-left: 10px;
+    width: calc(100% - 26.6pt - 10px);
+}
+.etiqueta:hover {
+  box-shadow: 5px 5px 6px rgba(50, 50, 90,.2);
+  transform: translateY(-1px) rotate(-1deg);
+}
+.ativador-input:checked + .box-faq .etiqueta {
+  box-shadow: 5px 5px 6px rgba(50, 50, 90,.2);
+  transform: translateY(-1px) rotate(-1deg);
+}
+.faq-desc {
+  background: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 500ms;
+  width: 100%;
+}
+.ativador-input:checked + .box-faq .faq-desc {
+  box-shadow: 0 2px 6px rgba(50, 50, 90,.1);
+  padding: 20px;
+}
+.ativador-input:checked + .box-faq .faq-desc {
+  max-height: 200px;
 }
 
 /* Rodapé

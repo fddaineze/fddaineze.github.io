@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+<head> 
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
@@ -53,7 +53,7 @@
 </head>
 
 <body>
-   
+
     <!-- Menu de Navegação
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <nav id="menu" class="navbar navbar-custom navbar-fixed-top navbar-inverse">
@@ -111,6 +111,7 @@
                     <!-- Coluna 1
                     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                     <div class="col-md-4">
+                       
                         <!-- ENTREGA RÁPIDA -->
                         <div class="col-md-12">
                             <div class="col-md-2">
@@ -147,13 +148,14 @@
 
                     <!-- Coluna 2
                     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/img-04.png" alt="Descrição">
+                    <div class="col-md-4 align">
+                        <p><img class="img-responsive" src="img/img-04.png" alt="Descrição"></p>
                     </div>
 
                     <!-- Coluna 3
                     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                     <div class="col-md-4">
+                       
                         <!-- QUALIDADE DO PRODUTO -->
                         <div class="col-md-12">
                             <div class="col-md-2">
@@ -297,13 +299,27 @@
             <div class="container">
                 <div class="row text-center">
                     <h2 class="titulo">Perguntas Frequentes</h2>
-                    <div class="col-md-offset-1 col-md-10">
-                        <div class="faq">
-                            <p class="pergunta box-radius">A loja é confiável?</p>
-                            <p class="resposta">Sim, nossa loja é confiável, a prova disso é que temos uma ótima reputação no mercado e um atendimento todos os dias da semana via e-mail. Além de grandes youtubers do cenário que divulgaram nossa loja.</p>
-                            
-                            <p class="pergunta">Qual os requisitos mínimos do minecraft?</p>
-                            <p class="resposta"><b>Processador:</b> Intel Pentium D or AMD Athlon 64 (K8) 2.6 GHz
+                    
+                    <div class="col-md-6">
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-1">
+                        <div class=box-faq>
+                            <label for="faq-1" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">A loja é confiável?</p>
+                            </label>
+                            <p class="faq-desc">
+                                Sim, nossa loja é confiável, a prova disso é que temos uma ótima reputação no mercado e um atendimento todos os dias da semana via e-mail. Além de grandes youtubers do cenário que divulgaram nossa loja.
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-2">
+                        <div class=box-faq>
+                            <label for="faq-2" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">Qual os requisitos do Minecraft?</p>
+                            </label>
+                            <p class="faq-desc">
+                               <b>Processador:</b> Intel Pentium D or AMD Athlon 64 (K8) 2.6 GHz
                                 <br>
                                 <b>Memória RAM:</b> 2GB
                                 <br>
@@ -311,25 +327,76 @@
                                 <br>
                                 <b>Onboard:</b> Nvidia GeForce 9600 GT or AMD Radeon HD 2400 with OpenGL 3.1
                                 <br>
-                                <b>Espaço em disco:</b> 200Mb</p>
-                                
-                            <p class="pergunta">Quais as formas de pagamento?</p>
-                            <p class="resposta">Utilizamos atualmente PagSeguro e MercadoPago as melhores plataformas de venda/compra do Brasil.</p>
-                            
-                            <p class="pergunta">Tive um problema técnico com minha conta.</p>
-                            <p class="resposta">Entre em contato via suporte explicando o seu caso, em até 3 dias você terá uma resposta.</p>
-                            
-                            <p class="pergunta">O produto tem uma garantia?</p>
-                            <p class="resposta">Antes de enviar para o cliente todas as contas são testadas, caso apresente problemas técnico iremos trocar, porém se ela for hackeada por culpa do cliente, nesses casos específicos não poderemos fazer nada.</p>
-                            
-                            <p class="pergunta">Quero alterar meus dados da conta como eu faço?</p>
-                            <p class="resposta">Todos os dados das contas como skin, nick, e-mail e perguntas de seguranças são trocadas dentro do site do Minecraft, não temos acesso a esses dados.</p>
-                            
-                            <p class="pergunta">As contas de Minecraft são Full Acesso (Acesso Completo)?</p>
-                            <p class="resposta">Sim, todas elas são migradas para o seu e-mail, ou seja, APENAS VOCÊ tem acesso a ela se tornando 100% segura e exclusiva.</p>
-                            
-                            <p class="pergunta">Como eu compro via Boleto Bancário?</p>
-                            <p class="resposta border-bottom">As nossas duas opções tanto PagSeguro e MercadoPago aceitam boleto bancário, lembrando que essa forma de pagamento pode demorar até 3 dias para ser confirmada dependendo do banco.</p>
+                                <b>Espaço em disco:</b> 200Mb
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-3">
+                        <div class=box-faq>
+                            <label for="faq-3" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">Quais as formas de pagamento?</p>
+                            </label>
+                            <p class="faq-desc">
+                               Utilizamos atualmente PagSeguro e MercadoPago as melhores plataformas de venda/compra do Brasil.
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-4">
+                        <div class=box-faq>
+                            <label for="faq-4" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">Tive um problema com a conta.</p>
+                            </label>
+                            <p class="faq-desc">
+                               Em caso de problemas técnicos, entre em contato via suporte explicando o seu caso, em até 3 dias você terá uma resposta.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-5">
+                        <div class=box-faq>
+                            <label for="faq-5" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">O produto tem uma garantia?</p>
+                            </label>
+                            <p class="faq-desc">
+                               Antes de enviar para o cliente todas as contas são testadas, caso apresente problemas técnico iremos trocar, porém se ela for hackeada por culpa do cliente, nesses casos específicos não poderemos fazer nada.
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-6">
+                        <div class=box-faq>
+                            <label for="faq-6" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">Quero alterar meus dados da conta como eu faço?</p>
+                            </label>
+                            <p class="faq-desc">
+                               Todos os dados das contas como skin, nick, e-mail e perguntas de seguranças são trocadas dentro do site do Minecraft, não temos acesso a esses dados.
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-7">
+                        <div class=box-faq>
+                            <label for="faq-7" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">As contas de Minecraft são Full Acesso (Acesso Completo)?</p>
+                            </label>
+                            <p class="faq-desc">
+                               Sim, todas elas são migradas para o seu e-mail, ou seja, APENAS VOCÊ tem acesso a ela se tornando 100% segura e exclusiva.
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-8">
+                        <div class=box-faq>
+                            <label for="faq-8" class="etiqueta">
+                                <p class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></p>
+                                <p class="title">Como eu compro via Boleto Bancário?</p>
+                            </label>
+                            <p class="faq-desc">
+                               As nossas duas opções tanto PagSeguro e MercadoPago aceitam boleto bancário, lembrando que essa forma de pagamento pode demorar até 3 dias para ser confirmada dependendo do banco.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -338,15 +405,16 @@
 
         <!-- Rodapé
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<footer id="rodape">
-			<div class="container">
-				<div class="row text-center">
-					<p class="texto"><a href="#inicio">NomeSite&copy;</a> 2018 - Todos os direitos reservados.</p>
-					<div class="borda"></div>
-					<p class="texto"><a href="https://github.com/jimmyfilips">Site desenvolvido por jimmyfilips</a></p>
-				</div>
-			</div>
-		</footer>
+        <footer id="rodape">
+           
+            <div class="container">
+                <div class="row text-center">
+                    <p class="texto"><a href="#inicio">NomeSite&copy;</a> 2018 - Todos os direitos reservados.</p>
+                    <div class="borda"></div>
+                    <p class="texto"><a href="https://github.com/jimmyfilips">Site desenvolvido por jimmyfilips</a></p>
+                </div>
+            </div>
+        </footer>
     </main>
 
 </body>
