@@ -152,7 +152,11 @@
 	display: inline-block;
 }
 .etiqueta .ico {
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    text-shadow: 
+        1px 1px 0 rgba(0,0,0,1),
+        -1px 1px 0 rgba(0,0,0,1),
+        1px -1px 0 rgba(0,0,0,1),
+        -1px -1px 0 rgba(0,0,0,1);
     color: #71d65d;
     font-size: 26.6pt;
     width:26.6pt;
