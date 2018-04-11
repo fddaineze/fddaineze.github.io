@@ -144,21 +144,22 @@
     transition: all 0.4s;
     width: 95%;
 }
-.etiqueta p {
-    margin: auto 0;
-	display: inline-block;
-}
 .etiqueta .ico {
+    color: #71d65d;
+    font-size: 26.6pt;
     text-shadow: 
+        1px 0 0 rgba(0,0,0,1),
+        0 1px 0 rgba(0,0,0,1),
+        -1px 0 0 rgba(0,0,0,1),
+        0 -1px 0 rgba(0,0,0,1),
         1px 1px 0 rgba(0,0,0,1),
         -1px 1px 0 rgba(0,0,0,1),
         1px -1px 0 rgba(0,0,0,1),
         -1px -1px 0 rgba(0,0,0,1);
-    color: #71d65d;
-    font-size: 26.6pt;
     width:26.6pt;
 }
 .etiqueta .title {
+    margin: auto 0;
     margin-left: 10px;
     width: calc(100% - 26.6pt - 10px);
 }
@@ -227,7 +228,6 @@ footer .texto:first-child::after {
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
-
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
