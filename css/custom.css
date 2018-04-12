@@ -46,6 +46,12 @@
     background-color: rgba(34,34,34,0.92);
     border-bottom: 0;
 }
+.navbar-brand {
+    font-family: 'Ranchers', cursive;
+    font-family: 'Slackey', cursive;
+    font-weight: normal;
+    letter-spacing:1px;
+}
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -110,11 +116,17 @@
     max-width: 600px;
 }
 .prod-header {
-    background: url(../img/background-home.jpg);
     background-color: #32729F;
-    background-size: cover;
     border-radius: 10px 10px 0 0;
     height:250px;
+}
+.produto-1 {
+    background: url(../img/test-img-02.jpg);
+    background-size: cover;
+}
+.produto-2 {
+    background: url(../img/test-img-03.jpg);
+    background-size: cover;
 }
 .prod-header .prod-titulo {
     color: white;
