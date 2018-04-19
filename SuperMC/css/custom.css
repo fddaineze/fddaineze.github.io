@@ -85,7 +85,6 @@
 }
 .quem-somos .texto {
     margin-bottom: 30px;
-    text-align: left;
 }
 .quem-somos img {
     margin-top: 40px;
@@ -123,10 +122,12 @@
 .produto-1 {
     background: url(../img/test-img-02.jpg);
     background-size: cover;
+    background-position: center;
 }
 .produto-2 {
     background: url(../img/test-img-03.jpg);
     background-size: cover;
+    background-position: center;
 }
 .prod-header .prod-titulo {
     color: white;
