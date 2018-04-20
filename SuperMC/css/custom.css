@@ -35,10 +35,10 @@
     font-weight: bold;
 }
 .navbar-custom a {
-    color: #d0d0d0;
+    color: #71d65d;
 }
 .navbar-custom a:hover {
-    color: white;
+    color: #79e564;
     text-decoration: none;
 }
 .navbar-inverse {
@@ -74,33 +74,6 @@
     min-height: 100vh;
 }
 
-/* Quem Somos
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.quem-somos {
-    background-color: #efefef;
-}
-.quem-somos i {
-    font-size: 35pt;
-    text-align: right;
-}
-.quem-somos .texto {
-    margin-bottom: 30px;
-    text-align: left;
-}
-.quem-somos img {
-    margin-top: 40px;
-}
-@media (min-width: 992px) {
-    .quem-somos .sub-titulo {
-        text-align: left;
-    }
-}
-@media (max-width: 992px) {
-    .quem-somos img {
-        margin-bottom: 40px;
-    }
-}
-
 /* Produtos
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .produtos {
@@ -123,10 +96,12 @@
 .produto-1 {
     background: url(../img/test-img-02.jpg);
     background-size: cover;
+    background-position: center;
 }
 .produto-2 {
     background: url(../img/test-img-03.jpg);
     background-size: cover;
+    background-position: center;
 }
 .prod-header .prod-titulo {
     color: white;
@@ -240,6 +215,31 @@ background-image: linear-gradient(to bottom, #cf2b4f, #980021 130%);
     transform: rotate(90deg);
     width: 0; 
     z-index: -50;
+}
+
+/* Quem Somos
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.quem-somos {
+    background-color: #1a1a1a;
+    color: #f8f8f8;
+}
+.quem-somos .titulo, .quem-somos .sub-titulo {
+    color: #71d65d;
+}
+.quem-somos i {
+    font-size: 35pt;
+    text-align: right;
+}
+.quem-somos .texto {
+    margin-bottom: 30px;
+}
+.quem-somos img {
+    margin-top: 40px;
+}
+@media (max-width: 992px) {
+    .quem-somos img {
+        margin-bottom: 40px;
+    }
 }
 
 /* Perguntas Frequentes
