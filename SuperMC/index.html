@@ -99,6 +99,31 @@
     <main>
         <h1 style="display: none">Principal</h1>
         
+        <!-- Compras
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <article class="compras">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="mascara"></div>
+                    
+                    <!-- Opcao 1 –– -- -- -->
+                    <div class="modal_compra" id="opcao1">
+                        <a class="prod-close">X Fechar</a>
+                        <h4>Produto 1</h4> 
+                        <p>Aqui vão ficar as opções de compra do produto</p>
+                    </div>
+                    
+                    <!-- Opcao 2 –– -- -- -->
+                    <div class="modal_compra" id="opcao2">
+                        <a class="prod-close">X Fechar</a>
+                        <h4>Produto 2</h4> 
+                        <p>Aqui vão ficar as opções de compra do produto</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+        
         <!-- Produtos
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <article class="section produtos" id="produtos">
@@ -127,7 +152,7 @@
                                 <p class="texto"><i class="fa fa-remove"></i> Não é possível trocar e-mail</p>
                                 <p class="texto"><i class="fa fa-remove"></i> Não é possível trocar perguntas de seguranças</p>
                             </div>
-                            <p class="prod-comprar">Comprar</p>
+                            <a rel="compra" data-compra="#opcao1"><p class="prod-comprar">Comprar</p></a>
                         </div>
                     </div>
 
@@ -151,14 +176,13 @@
                                 <p class="texto"><i class="fa fa-check"></i> É possível trocar e-mail</p>
                                 <p class="texto"><i class="fa fa-check"></i> É possível trocar perguntas de seguranças</p>
                             </div>
-                            <p class="prod-comprar">Comprar</p>
+                            <a rel="compra" data-compra="#opcao2"><p class="prod-comprar">Comprar</p></a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </article>
-
+        
         <!-- Quem Somos
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <article class="section quem-somos" id="quem-somos">
