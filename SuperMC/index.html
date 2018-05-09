@@ -152,7 +152,8 @@
                                 <p class="texto"><i class="fa fa-remove"></i> Não é possível trocar e-mail</p>
                                 <p class="texto"><i class="fa fa-remove"></i> Não é possível trocar perguntas de seguranças</p>
                             </div>
-                            <a rel="compra" data-compra="#opcao1"><p class="prod-comprar">Comprar</p></a>
+                            <!-- "data-md", define qual modal será aberto. -->
+                            <a rel="compra" data-md="janela1"><p class="prod-comprar">Comprar</p></a>
                         </div>
                     </div>
 
@@ -176,12 +177,14 @@
                                 <p class="texto"><i class="fa fa-check"></i> É possível trocar e-mail</p>
                                 <p class="texto"><i class="fa fa-check"></i> É possível trocar perguntas de seguranças</p>
                             </div>
-                            <a rel="compra" data-compra="#opcao2"><p class="prod-comprar">Comprar</p></a>
+                            <!-- "data-md", define qual modal será aberto. -->
+                            <a rel="compra" data-md="janela2"><p class="prod-comprar">Comprar</p></a>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
+        
         
         <!-- Quem Somos
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -343,6 +346,22 @@
                 </div>
             </div>
         </article>
+        
+        <!-- CRIANDO O MODAL
+        - "class='md-box'" define que isso é um modal,
+        - data-id define qual é esse modal
+        - data-close faz com que o modal seja fechado ao clique
+        -->
+        <aside class="md-box" data-id="janela1">
+            <p data-close>Clique aqui para Fechar X</p>
+            <h1>Modal #1.</h1>
+        </aside>
+
+        <aside class="md-box" data-id="janela2">
+            <p data-close>Clique aqui para Fechar X</p>
+            <h1>Modal #2.</h1>
+        </aside>
+        
     </main>
 
     <!-- Rodapé
