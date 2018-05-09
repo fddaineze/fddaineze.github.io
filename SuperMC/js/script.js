@@ -35,8 +35,6 @@ $(document).ready(function () {
         'min-height:100vh;' +
         '}' +
         '.md-content {' +
-        'background-color:#FFF;' +
-        'padding:20px;' +
         'display:none;' +
         'text-align:center;' +
         '}' +
@@ -54,7 +52,7 @@ $(document).ready(function () {
         object.innerHTML = '';
         // Monta a nova estrutura dividindo em box e content
         object.innerHTML +=
-            '<div class="md-content" ' +
+            '<div class="md-content container" ' +
             'data-id="' + id + '">' +
             mdcontent + '</div>';
     });

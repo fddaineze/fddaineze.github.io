@@ -244,6 +244,13 @@
     z-index: -50;
 }
 
+/* Modals
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.prod-opcoes {
+    background-color:#FFF;
+    padding:20px;
+}
+
 /* Quem Somos
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .quem-somos {
