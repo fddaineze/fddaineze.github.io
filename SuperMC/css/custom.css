@@ -43,7 +43,6 @@
 }
 .navbar-inverse {
     background-color: rgb(34,34,34);
-    background-color: rgba(34,34,34,0.92);
     border-bottom: 0;
 }
 .navbar-brand {
@@ -55,6 +54,9 @@
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.spacing {
+	height: 2rem;
+}
 .inicio img {
     margin: 0 auto;
     max-width: 500px;
@@ -129,12 +131,12 @@
     height:250px;
 }
 .produto-1 {
-    background: url(../img/test-img-02.jpg);
+    background: url(../img/conta-alt.jpg);
     background-position: center;
     background-size: cover;
 }
 .produto-2 {
-    background: url(../img/test-img-03.jpg);
+    background: url(../img/conta-full.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -339,8 +341,8 @@
 /* Rodapé
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
-  background: url(../img/background-footer.jpg) no-repeat center;
-  background-size: 100%;
+  background: url(../img/background-footer.jpg) repeat top;
+  background-size: auto;
   padding: 25px 0 10px 0;
 }
 footer .texto {
