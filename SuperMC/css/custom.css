@@ -393,6 +393,12 @@ a.botao-pagseguro:active {
 		from(#5C9336),
 		to(#77BA00));
 }
+.prod-download {
+    padding-top: 3rem;
+}
+.ico-download {
+    margin-right: 10px;
+}
 @media (max-width: 762px) {
     .prod-opcoes {
         min-width: 90vw;
