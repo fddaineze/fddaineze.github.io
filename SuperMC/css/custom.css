@@ -42,6 +42,7 @@
 }
 .navbar-custom a {
     color: #71d65d;
+    cursor: pointer;
 }
 .navbar-custom a:hover {
     color: #79e564;
@@ -522,6 +523,7 @@ footer a {
 footer a:hover {
   color: #66c054;
 }
+/*
 footer .texto:first-child::after {
 	background: #555;
 	content: '';
@@ -533,6 +535,7 @@ footer .texto:first-child::after {
     top: 15px;
 	width: 200px;
 }
+*/
 
 /* Pace Loading
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

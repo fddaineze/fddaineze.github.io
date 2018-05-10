@@ -16,6 +16,11 @@ $(document).ready(function () {
             scrollTop: targetOffset
         }, 500);
     });
+    $('a[data-md^="janela"]').on('click', function (e) {
+        if ($('.navbar-toggle').css('display') != 'none') {
+            $('.navbar-toggle').trigger("click");
+        }
+    });
     /*  API Modal (por https://github.com/jimmyfilips)
     ---------------------------------------------------- */
     // Ao carregar o html ele cria style básico
