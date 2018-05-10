@@ -258,6 +258,9 @@
     border-radius: 5px;
     position: relative;
 }
+.prod-opcoes.form-contato {
+    padding:20px 0;
+}
 .prod-opcoes-close {
     cursor: pointer;
     position: absolute;
