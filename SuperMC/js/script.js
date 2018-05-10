@@ -60,6 +60,8 @@ $(document).ready(function () {
     $('[data-md]').click(function (ev) {
         ev.preventDefault();
         var id = $(this).attr("data-md");
+        $('.md-box').hide();
+        $('.md-content').hide();
         $('.md-box[data-id=' + id + ']').css({
             'display': 'flex'
         });
