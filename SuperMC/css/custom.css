@@ -208,7 +208,6 @@
     background-color: #955DB8;
     color: #fff;
 }
-
 @media (min-width: 992px) {
     .gold-box {
         transform: translate(0,-15px);
@@ -217,7 +216,6 @@
         height:280px;
     }
 }
-
 .selo {
     border-bottom: 15px solid #EDE74E;
     border-left: 15px solid transparent;
