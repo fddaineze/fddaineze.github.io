@@ -3,6 +3,6 @@
 Repositório de sites em desenvolvimento
 
 ### PROJETOS ATUAIS
-* SuperMC
+* SuperMC **(concluído)**
 * Acts 26.18 **(concluído)**
  
