@@ -82,91 +82,6 @@
     display: flex;
     min-height: 100vh;
 } 
-.botao {
-    /* temporario */ 
-	margin: 40px 30px 15px 30px;
-    
-    /* Estetica */
-    background-color: rgba(209, 214, 93, 0.4);
-	border: 2px solid #71d65d;
-    padding: 10px 40px;
-    font-variant: small-caps;
-	text-transform: none !important;
-/*    text-shadow: 0 0 2px rgba(0,0,0,1) !important;*/
-    
-    text-shadow: 
-        1px 0 0 rgba(0,0,0,1),
-        0 1px 0 rgba(0,0,0,1),
-        -1px 0 0 rgba(0,0,0,1),
-        0 -1px 0 rgba(0,0,0,1),
-        1px 1px 0 rgba(0,0,0,1),
-        -1px 1px 0 rgba(0,0,0,1),
-        1px -1px 0 rgba(0,0,0,1),
-        -1px -1px 0 rgba(0,0,0,1) !important;
-    box-shadow: 
-        1px 0 0 rgba(0,0,0,1),
-        0 1px 0 rgba(0,0,0,1),
-        -1px 0 0 rgba(0,0,0,1),
-        0 -1px 0 rgba(0,0,0,1),
-        1px 1px 0 rgba(0,0,0,1),
-        -1px 1px 0 rgba(0,0,0,1),
-        1px -1px 0 rgba(0,0,0,1),
-        -1px -1px 0 rgba(0,0,0,1) !important;
-    font-size: 2rem !important;
-    color: #71d65d !important;
-	font-weight: 700;
-	cursor: pointer;
-    text-decoration: none;
-    
-    /* Efeito Botão */
-	overflow: hidden;
-    display: inline-block;
-	position: relative;
-    
-    /* Efeito de Texto */
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-/*Fundo */
-.botao:after {
-	content: '';
-        
-    /* Posicionamento */
-	position: absolute;
-	width: 100%;
-	height: 0;
-	top: 50%;
-	left: 50%;
-    
-    /* Estilo */
-    mix-blend-mode: exclusion;
-	background: #fff;
-	opacity: 1;
-    
-    /* Movimentação */
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	transform: translateX(-50%) translateY(-50%) rotate(45deg);
-}
-/* Texto / Hover-Clique */
-.botao:hover, .btn:active {
-	color: #fff;
-}
-/* botao / Hover */
-.botao:hover:after {
-	height: 370%;
-	opacity: 1;
-}
-/* botao / Clique */
-.botao:active:after {
-	height: 530%;
-	opacity: 1;
-}
 
 /* Opções de compras
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -261,6 +176,11 @@
 .vantagens {
     background-color: #F2F6F7;
     padding: 10px 25px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.vantagens .vant-space { 
+    margin-bottom: 0 
 }
 .vantagens .destaque {
     background-color: #13C3B7;
@@ -342,6 +262,18 @@
     transform: rotate(90deg);
     width: 0; 
     z-index: -50;
+}
+.promo-inauguracao {
+    margin: -45px auto 4rem auto;
+    transform:rotate(-3deg);
+    width: 160px;
+    background-color: #EDE74E;
+    color: #8B8F29;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 7pt;
+    font-weight: bold;
 }
 
 /* Modals
