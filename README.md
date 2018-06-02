@@ -5,4 +5,4 @@
 ###
 Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)
 
-ou acesse <code>jimmyfilips.github.io</code>code>
+ou acesse <code>jimmyfilips.github.io</code>
