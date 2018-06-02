@@ -1,9 +1,8 @@
-# jimmyfilips.github.io
-
-Repositório de sites em desenvolvimento
-
-### PROJETOS ATUAIS
+### PROJETOS
 * SuperMC **(concluído)**
 * Acts 26.18 **(concluído)**
- 
- O Site ainda não está disponível nesta versão
+
+###
+Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)
+
+ou acesse <code>jimmyfilips.github.io</code>code>
