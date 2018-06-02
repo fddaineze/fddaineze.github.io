@@ -152,7 +152,7 @@ body {
     .navbar-toggle:hover .icon-bar {
         background-color: #08FDD8;
     } 
-}
+} 
 
 /* Navbar - Desktop (menu vertical)
 --------------------------------------------------- */
@@ -198,7 +198,6 @@ body {
 --------------------------------------------------- */
 .full-size {
     align-items: center;
-/*    background-image: radial-gradient(ellipse farthest-corner at 120% 150%,#111 20%,transparent 80%);*/
     display: flex;
     justify-content: center;
     min-height: 100vh;
