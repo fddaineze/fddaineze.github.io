@@ -127,6 +127,8 @@ body {
     .navbar-collapse {
         background-color: #181818;
         box-shadow: none;
+        max-height: 55px;
+        overflow:hidden;
     }
     .navbar-nav>li>a {
         line-height: unset;
