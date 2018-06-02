@@ -1,0 +1,231 @@
+body {
+    background-color: #252627;
+    /* divisores */
+    font-family: 'La Belle Aurore', cursive;
+    /* menus */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* logo */
+    font-family: 'Exo 2', sans-serif;
+    /* geral */
+    font-family: "open sans", "segoe ui", sans-serif;
+    transition: all 2s;
+}
+.crimson {
+	color: #08FDD8;
+}
+.crimson-inverse {
+	color: #FC0853;
+}
+
+/* Navbar - All
+--------------------------------------------------- */
+.navbar-custom {
+    background-color: #181818;
+    color: #4D4D4E;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 55px;
+}
+.navbar-custom a:hover {
+    color: #08FDD8;
+}
+.navbar-center a, 
+.navbar-footer a {
+    background-color: transparent !important;
+    color: #4D4D4E;
+}
+.navbar-header {
+    background-color: #070707
+}
+.navbar-brand {
+    color: #FFFFFF !important;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    height: 55px;
+}
+.navbar-brand .crimson {
+    margin-right: .2rem;
+}
+.navbar-brand .crimson::before {
+    color: #FC0853;
+    content: "F";
+    margin-left: .2rem;
+    margin-right: -1.16rem;
+}
+.navbar-right {
+    padding-right: 15px;
+}
+.navbar-right a {
+    transition: all 1s;
+}
+.navbar-center a {
+    color: #4d4d4e;
+    display: block;
+    font-size: 25px;
+    height: 55px;
+    margin-left: 14%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+    text-decoration: none;
+}
+.navbar-center a svg {
+    overflow: hidden;
+    transition: all 1s;
+    width: 100%;
+}
+.navbar-center a:hover svg {
+    width: 0;
+}
+.navbar-center a .hover-only {
+    display: inline-block;
+    font-size: 14px;
+    overflow: hidden;
+    transition: all 1s;
+    width: 0;
+}
+.navbar-center a:hover .hover-only {
+    width: 100%;
+}
+
+/* Navbar - Tablet/Celular (Menu superior)
+--------------------------------------------------- */
+@media only screen and (max-width : 992px) {
+    .navbar-center li {
+        width: 14%;
+    }
+    .navbar-center {
+        display: flex;
+        float: none;
+        justify-content: center;
+    }
+}
+
+/* Navbar - Celular (Menu colapsado)
+--------------------------------------------------- */
+@media only screen and (max-width : 768px) {
+    .navbar-brand {
+        background-color: #070707 !important;
+        border-bottom: 1px solid #070707;
+    }
+    .navbar-header {
+        background-color: #181818;
+    }
+    .navbar-toggle {
+        transition: all 1s;
+    }
+    .navbar-toggle:hover {
+        border: 1px solid #08FDD8;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: #FFFFFF;
+        height: 4px;
+        transition: all 1s;
+    }
+    .navbar-center {
+        margin: 0;
+    }
+    .navbar-collapse {
+        background-color: #181818;
+        box-shadow: none;
+    }
+    .navbar-nav>li>a {
+        line-height: unset;
+    }
+    .navbar-nav>li {
+        text-align: center;
+        width: 25%;
+    }
+    .navbar-toggle:hover .icon-bar {
+        background-color: #08FDD8;
+    }
+}
+
+/* Navbar - Desktop (menu vertical)
+--------------------------------------------------- */
+@media only screen and (min-width : 992px) {
+    .navbar-custom {
+        border-radius: 0;
+        height: 100%;
+        position: fixed;
+        width: 70px;
+    }
+    .navbar-reference {
+        height: 100%;
+        position: relative;
+    }
+    .navbar-footer {
+        bottom: 15px;
+        position: absolute;
+    }
+    .navbar-custom .navbar-nav > li {
+        float: none;
+        margin-top: 22px;
+        text-align: center;
+        width: 69px;
+    }
+    .navbar-center {
+        height: 80vh;
+    }
+    .navbar-center a {
+        margin: 0;
+    }
+}
+/* esconder menu social com base na altura da tela */
+@media only screen and (max-height : 578px) {
+    .navbar-center {
+        height: 100vh;
+    }
+    .navbar-footer {
+        display: none;
+    }
+}
+
+/* Home
+--------------------------------------------------- */
+.full-size {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+.content { 
+    color: #FFFFFF;
+    transition: all 2s;
+}
+/* espaçamento a esquerda para evitar que o conteúdo entre atrás do menu*/
+@media only screen and (min-width : 1000px) {
+    .content {
+        padding-left: 60px;
+    }
+}
+
+/* Logo
+---------------------- */
+.logo {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6.6rem;
+    margin-bottom: 0;
+    padding-left: 3rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+.logo .crimson {
+    margin-right: .5rem;
+}
+.logo .crimson::before {
+	color: #FC0853;
+    content: "F";
+    margin-left: .5rem;
+    margin-right: -3.76rem;
+}
+.effect-color {
+    color: #151515; 
+}
+.effect-color .logo {
+    text-shadow: 0 0 0 #151515;
+}
+.effect-back {
+    background-color: #151515;
+}
