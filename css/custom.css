@@ -1,9 +1,10 @@
 body {
     background-color: #252627;
-    /* divisores */
+    /* tags */
     font-family: 'La Belle Aurore', cursive;
     /* menus */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Overpass Mono', monospace;
     /* logo */
     font-family: 'Exo 2', sans-serif;
     /* geral */
@@ -22,7 +23,7 @@ body {
 .navbar-custom {
     background-color: #181818;
     color: #4D4D4E;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Overpass Mono', monospace;
     height: 55px;
 }
 .navbar-custom a:hover {
@@ -78,7 +79,7 @@ body {
 }
 .navbar-center a .hover-only {
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     overflow: hidden;
     transition: all 1s;
     width: 0;
