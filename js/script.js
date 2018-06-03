@@ -42,7 +42,7 @@ $(document).ready(function () {
                 }
             } else {
                 // SCROLL ACIMA DO PERMITIDO - posiciona a tela ao "começo do div"
-                $('html, body').scrollTop(testtop);
+                $('html, body').scrollTop(testtop); 
             }
         });
     });
