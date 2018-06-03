@@ -301,6 +301,7 @@ h1 {
     margin-bottom: 3rem;
     padding-left: 3rem;
     padding-top: 3rem;
+    padding-bottom: .5rem;
 }
 .cinza {
     color: var(--gray);
