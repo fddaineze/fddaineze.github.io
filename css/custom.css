@@ -6,6 +6,7 @@
 
 --featured: #08FBE8;
 --inverse: #FB0853;
+--chocolate: #D2691E;
 
 --bgcolor: #19191D;
 --bgbody: #262630;
@@ -49,7 +50,7 @@ body {
     text-decoration: none;
 }
 .sp-btn:hover, .sp-btn:active {
-	background-color: var(--featured);
+	background-color: var(--chocolate);
 	color: var(--bgbody);
     text-decoration: none;
 } 
@@ -101,6 +102,9 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+.navbar-right>li>a:hover {
+    color: var(--chocolate);
 }
 
 /* Brand anagliph effect
@@ -345,6 +349,9 @@ body {
     color: var(--clear);
     transition: all var(--pagein);
 }
+.container {
+    padding: 3rem;
+}
 
 .tags {
     color: var(--gray);
@@ -383,27 +390,6 @@ body {
     .tags.superior, .tags.inferior {
         left: 0;
     }
-}
-
-/* Anim. de Entrada
----------------------- */
-.achatado {
-    height: 0;
-    min-height: 0;
-    opacity: 0;
-    overflow-y: hidden;
-}
-.page-load {
-    transition: all var(--pagein);
-}
-.page-load effect {
-    height: 0;
-}
-.page-loaded {
-    transition: all var(--pagein);
-}
-.effect {
-    opacity: 0; 
 }
 
 /* Home 
@@ -453,4 +439,25 @@ h1 {
     #home {
         min-height: 490px;
     }
+}
+
+/* Anim. de Entrada (sempre por último)
+--------------------------------------------------- */
+.achatado {
+    height: 0 !important;
+    min-height: 0 !important;
+    opacity: 0 !important;
+    overflow-y: hidden !important;
+}
+.page-load {
+    transition: all var(--pagein);
+}
+.page-load effect {
+    height: 0;
+}
+.page-loaded {
+    transition: all var(--pagein);
+}
+.effect {
+    opacity: 0; 
 }
