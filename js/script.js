@@ -10,17 +10,17 @@ $(document).ready(function () {
     // esse evento apenas cria um scroll suave ao utilizar o menu
 	$('a[href^="#"]').on('click', function (e) {
         // primeiro interrompe o evento original
-		e.preventDefault();
+        e.preventDefault();
         // salva a posição do item de destino
         var id = $(this).attr('href');
         if (id=="#") id = "#home";
-		var targetOffset = $(id).offset().top;
+        var targetOffset = $(id).offset().top;
         // atualizo também o target para que ele limite somente a nova área
         $target = $(id);
         // e cria uma animação até ele
-		$('html, body').animate({
-			scrollTop: targetOffset
-		}, 500);
+        $('html, body').animate({
+            scrollTop: targetOffset
+        }, 500);
 	});
  
     $(document).scroll(function() {
@@ -38,17 +38,17 @@ $(document).ready(function () {
             if (documentTop > testtop) {
                 if (documentBot > testbot) {
                     // SCROLL ABAIXO DO PERMITIDO - posiciona a tela ao "final do div" - "altura da tela"
-                    $('html, body').animate({
-                        scrollTop: testbot-offset
-                    }, 0);
+                    $('html, body').scrollTop(testbot-offset);
                 }
             } else {
                 // SCROLL ACIMA DO PERMITIDO - posiciona a tela ao "começo do div"
-                $('html, body').animate({
-                    scrollTop: testtop
-                }, 0);
+                $('html, body').scrollTop(testtop);
             }
         });
+    });
+    
+    $('document').bind('touchmove', function(e) { 
+        
     });
 
 });
