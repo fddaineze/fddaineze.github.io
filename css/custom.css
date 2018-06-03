@@ -4,13 +4,13 @@
 --emphasys: 'Exo 2', sans-serif; /* logo */
 --pattern: 'open sans', 'segoe ui', sans-serif; /* geral */
 
---featured: #08fbe8;
---inverse: #fb0853;
+--featured: #08FBE8;
+--inverse: #FB0853;
 
---bgcolor: #161617;
---bgbody: #262627;
---bgblack: #070708;
---bgellipse: #111112;
+--bgcolor: #19191D;
+--bgbody: #262630;
+--bgblack: #000001;
+--bgellipse: #111115;
 
 --gray: #4D4D4E;
 --clear: #FEFEFF;

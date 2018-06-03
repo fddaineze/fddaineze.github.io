@@ -1,17 +1,12 @@
-### PROJETOS
-* SuperMC **(concluído)**
-* Acts 26.18 **(concluído)**
-
 ### Site
 **Estrutura**
-* HTML5
-* CSS
-* Flexbox
-* jQuery
-* Bootstrap
+* HTML5 - <https://www.w3.org/TR/html5/>
+* CSS - <https://www.w3.org/TR/CSS/>
+* Flexbox - <https://www.w3.org/TR/css-flexbox-1/>
+* jQuery 3.3.1 - <http://api.jquery.com/>
+* Bootstrap 3.3.7 - <https://getbootstrap.com/docs/3.3/getting-started/>
 
-**Design**
-* leitor PDF (cores de fundo, estilo do menu)
+**Conceito**
 * anaglifo 3d (cores de destaque, azul/vermelho)
 
 Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)
