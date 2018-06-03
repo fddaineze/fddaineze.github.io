@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('href');
+        if (id == "#") id = "#home";
         $('.full-size'+atual).addClass('achatado');
         atual = id;
         $('.full-size'+id).removeClass('achatado');
