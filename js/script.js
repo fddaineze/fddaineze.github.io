@@ -4,13 +4,9 @@ $(document).ready(function () {
     var atual = '#home';
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
-        
         setTimeout(function () {
-            if ($('.navbar-toggle').css('display') != 'none') {
-                $('.navbar-toggle').trigger("click");
-            }
+            if ($('.navbar-toggle').css('display') != 'none') $('.navbar-toggle').trigger("click");
         }, 1000);
-        
         var id = $(this).attr('href');
         if (id == "#") id = "#home";
         $('.full-size'+atual).addClass('achatado');
