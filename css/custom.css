@@ -272,6 +272,11 @@ h1 {
     padding-left: 3rem;
     padding-top: 3rem;
 }
+.cinza {
+    color: var(--gray);
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
 
 /* Anim. de Entrada
 ---------------------- */
