@@ -323,7 +323,7 @@ h1 {
     opacity: 0; 
 }
 
-/* Home
+/* Home 
 ---------------------- */
 @media only screen and (max-height : 625px) and (max-width : 992px) {
     #home {
