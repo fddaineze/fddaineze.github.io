@@ -66,10 +66,10 @@ body {
     width: var(--navbar);
 }
 .navbar-center {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 .navbar-center>li {
     align-items: center;
     display: flex;
@@ -156,6 +156,7 @@ body {
 
 /* Navbar - menu vertical
 ------------------------ */
+
 @media only screen and (min-width : 992px) {
     .navbar-custom {
         height: 100%;
@@ -166,52 +167,83 @@ body {
         align-items: center;
         display: flex;
         flex-direction: column;
-        float: none;
         height: 12%;
         justify-content: center;
         width: var(--navbar);
     }
     .navbar-reference {
         height: 100%;
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+    }
+    .navbar-header {
+        float: none;
+        flex-grow: 0;
+        height: var(--navbar);
+        width: var(--navbar);
+    }
+    .navbar-collapse {
+        float: none;
+        height: auto;
+        max-height: none !important;
+        flex-grow: 1;
     }
     .navbar-footer {
-        bottom: 15px;
-        position: absolute;
+        float: none;
+        flex-grow: 0;
     }
     .navbar-center {
         flex-direction: column;
-        height: calc(100vh - 90px);
+        top: 50%;
+        position: absolute;
+        height: 300px;
+        margin-top: -150px;
+    }
+    .navbar-center>li {
+        height: var(--navbar) !important;
     }
 }
-/* ajustar espaçamento dos icones e esconder menu social com base na altura da tela */
+/* oculta o menu social e fixa o menu principal com base na altura da tela */
 @media only screen and (max-height : 578px) and (min-width : 992px) {
-    .navbar-center { 
-        height: calc(100vh - 60px);
-    }
     .navbar-footer {
         display: none;
     }
-    .navbar-custom .navbar-nav > li {
-        height: 20%;
-    }
 }
-@media only screen and (max-height : 400px) and (min-width : 992px) {
-    .navbar-custom .navbar-nav > li {
-        height: 25%;
+@media only screen and (max-height : 420px) and (min-width : 992px) {
+    .navbar-center {
+        top: var(--navbar);
+        margin-top: 0;
     }
 }
 
 /* Navbar - Menu superior
 ------------------------ */
-@media only screen and (max-width : 992px) {
-    .navbar-center>li {
-        height: var(--navbar);
-        width: 14%;
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+    .navbar-reference {
+        display: flex;
+    }
+    .navbar-header {
+        flex-grow: 0;
+        float: none;
+        height: 60px;
+        width: 60px;
+    }
+    .navbar-collapse {
+        flex-grow: 2;
+        float: none;
+    }
+    .navbar-footer {
+        flex-grow: 0;
+        float: none;
     }
     .navbar-center {
         float: none;
     } 
+    .navbar-center>li {
+        height: var(--navbar);
+        width: 14%;
+    }
     .navbar-right {
         margin-right: 0;
     }
@@ -243,6 +275,7 @@ body {
     }
     .navbar-center {
         margin: 0;
+        height: var(--navbar);
     }
     .navbar-collapse {
         background-color: var(--bgcolor);
