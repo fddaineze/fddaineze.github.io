@@ -4,23 +4,26 @@
 --emphasys: 'Exo 2', sans-serif; /* logo */
 --pattern: 'open sans', 'segoe ui', sans-serif; /* geral */
 
---featured: #08FDD8;
---inverse: #FC0853;
+--featured: #08fbe8;
+--inverse: #fb0853;
 
---bgcolor: #181818;
---bgbody: #252627;
---bgblack: #070707;
---bgellipse: #111111;
+--bgcolor: #161617;
+--bgbody: #262627;
+--bgblack: #070708;
+--bgellipse: #111112;
 
 --gray: #4D4D4E;
---clear: #FFFFFF;
+--clear: #FEFEFF;
+    
+--navbar: 60px;
+--animation: .4s;
 }
 
 body {
     background-color: var(--bgbody);
     font-family: var(--pattern);
-    transition: all 2s;
     overflow-x: hidden;
+    transition: all 2s;
 }
 .crimson {
 	color: var(--featured);
@@ -29,31 +32,57 @@ body {
 	color: var(--inverse);
 }
 
-/* Navbar - All
+/* Navbar
 --------------------------------------------------- */
 .navbar-custom {
     background-color: var(--bgcolor);
+    border-radius: 0;
     color: var(--gray);
     font-family: var(--monospace);
-    height: 55px;
-} 
-.navbar-custom a:hover {
-    color: var(--featured);
+    height: var(--navbar);
 }
 .navbar-center a, 
 .navbar-footer a {
     background-color: transparent !important;
     color: var(--gray);
 }
+.navbar-custom a:hover {
+    color: var(--featured);
+}
+.navbar-custom .active {
+    color: var(--featured);
+}
 .navbar-header {
     background-color: var(--bgblack);
 }
 .navbar-brand {
+    align-items: center;
     color: var(--featured) !important;
+    display: flex;
     font-family: 'Exo 2', sans-serif;
     font-weight: 600;
-    height: 55px;
+    height: var(--navbar);
+    justify-content: center;
+    width: var(--navbar);
 }
+.navbar-center {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+.navbar-center>li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.navbar-right>li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Brand anagliph effect
+------------------------ */
 .navbar-brand .crimson,
 .navbar-brand .crimson-l,
 .navbar-brand .crimson-g {
@@ -63,7 +92,6 @@ body {
 .navbar-brand .crimson-l::before,
 .navbar-brand .crimson-g::before {
     color: var(--inverse);
-    content: "F";
     margin-left: .2rem;
     margin-right: -1.16rem;
 }
@@ -76,112 +104,72 @@ body {
 .navbar-brand .crimson-g::before {
     content: ">";
 }
-.navbar-right {
-    padding-right: 15px;
-}
+
+/* Navbar Hover effect
+------------------------ */
 .navbar-right a {
-    transition: all 1s;
+    transition: all var(--animation);
 }
 .navbar-center a {
     color: var(--gray);
     display: block;
     font-size: 25px;
-    height: 55px;
-    margin-left: 14%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    position: relative;
-    text-decoration: none;
 }
 .navbar-center a svg {
-    overflow: hidden;
-    transition: all 1s;
-    width: 100%;
+    opacity: 1;
+    -webkit-transition: all var(--animation) ease-out;
+    transition: all var(--animation) ease-out;
 }
 .navbar-center a:hover svg {
-    width: 0;
+    opacity: 0;
 }
-.navbar-center a .hover-only {
-    display: inline-block;
+.navbar-center a#home-nav:after {
+    content: 'home';
+}
+.navbar-center a#skill-nav:after {
+    content: 'skill';
+}
+.navbar-center a#work-nav:after {
+    content: 'work';
+}
+.navbar-center a#contato-nav:after {
+    content: 'contact';
+}
+.navbar-center a:after {
+    align-items: center;
+    bottom: 0;
+    display: flex;
     font-size: 13px;
-    overflow: hidden;
-    transition: all 1s;
-    width: 0;
-}
-.navbar-center a:hover .hover-only {
+    height: 100%;
+    justify-content: center;
+    left:0;
+    letter-spacing: .6px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: all var(--animation) ease-out;
+    transition: all var(--animation) ease-out;
     width: 100%;
 }
-
-/* Navbar - Tablet/Celular (Menu superior)
---------------------------------------------------- */
-@media only screen and (max-width : 992px) {
-    .navbar-center li {
-        width: 14%;
-    }
-    .navbar-center {
-        display: flex;
-        float: none;
-        justify-content: center;
-    } 
+.navbar-center a:hover:after {
+    opacity: 1;
 }
 
-/* Navbar - Celular (Menu colapsado)
---------------------------------------------------- */
-@media only screen and (max-width : 768px) {
-    .navbar-brand {
-        background-color: var(--bgblack) !important;
-        border-bottom: 1px solid var(--bgblack);
-    }
-    .navbar-header {
-        background-color: var(--bgcolor);
-    }
-    .navbar-toggle {
-        transition: all 1s;
-    }
-    .navbar-toggle:hover {
-        border: 1px solid var(--featured);
-    }
-    .navbar-toggle .icon-bar {
-        background-color: var(--clear);
-        height: 4px;
-        transition: all 1s;
-    }
-    .navbar-center {
-        margin: 0;
-    }
-    .navbar-collapse {
-        background-color: var(--bgcolor);
-        box-shadow: none;
-    }
-    .navbar-nav>li>a {
-        line-height: unset;
-    }
-    .navbar-nav>li {
-        text-align: center;
-        width: 25%;
-    }
-    .navbar-toggle:hover .icon-bar {
-        background-color: var(--featured);
-    } 
-} 
-
-/* Navbar - Desktop (menu vertical)
---------------------------------------------------- */
+/* Navbar - menu vertical
+------------------------ */
 @media only screen and (min-width : 992px) {
     .navbar-custom {
-        border-radius: 0;
         height: 100%;
         position: fixed;
-        width: 70px;
+        width:var(--navbar);
     }
     .navbar-custom .navbar-nav > li {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         float: none;
-        margin-top: 22px;
-        text-align: center;
-        width: 69px;
-    }
-    .navbar-custom .navbar-right > li {
-        margin-top: 0;
+        height: 12%;
+        justify-content: center;
+        width: var(--navbar);
     }
     .navbar-reference {
         height: 100%;
@@ -192,21 +180,81 @@ body {
         position: absolute;
     }
     .navbar-center {
-        height: 80vh;
-    }
-    .navbar-center a {
-        margin: 0;
+        flex-direction: column;
+        height: calc(100vh - 90px);
     }
 }
-/* esconder menu social com base na altura da tela */
-@media only screen and (max-height : 578px) and (min-width : 768px) {
+/* ajustar espaçamento dos icones e esconder menu social com base na altura da tela */
+@media only screen and (max-height : 578px) and (min-width : 992px) {
     .navbar-center { 
-        height: 100vh;
+        height: calc(100vh - 60px);
     }
     .navbar-footer {
         display: none;
     }
+    .navbar-custom .navbar-nav > li {
+        height: 20%;
+    }
 }
+@media only screen and (max-height : 400px) and (min-width : 992px) {
+    .navbar-custom .navbar-nav > li {
+        height: 25%;
+    }
+}
+
+/* Navbar - Menu superior
+------------------------ */
+@media only screen and (max-width : 992px) {
+    .navbar-center>li {
+        height: var(--navbar);
+        width: 14%;
+    }
+    .navbar-center {
+        float: none;
+    } 
+    .navbar-right {
+        margin-right: 0;
+    }
+    .navbar-right>li {
+        height: var(--navbar);
+    }
+}
+
+/* Navbar - Menu colapsado
+------------------------ */
+@media only screen and (max-width : 768px) {
+    .navbar-brand {
+        background-color: var(--bgblack) !important;
+        border-bottom: 1px solid var(--bgblack);
+    }
+    .navbar-header {
+        background-color: var(--bgcolor);
+    }
+    .navbar-toggle {
+        transition: all var(--animation);
+    }
+    .navbar-toggle:hover {
+        border: 1px solid var(--featured);
+    }
+    .navbar-toggle .icon-bar {
+        background-color: var(--clear);
+        height: 4px;
+        transition: all var(--animation);
+    }
+    .navbar-center {
+        margin: 0;
+    }
+    .navbar-collapse {
+        background-color: var(--bgcolor);
+        box-shadow: none;
+    }
+    .navbar-nav>li {
+        width: 25%;
+    }
+    .navbar-toggle:hover .icon-bar {
+        background-color: var(--featured);
+    } 
+} 
 
 /* Sections
 --------------------------------------------------- */
@@ -214,33 +262,37 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    max-height: 1000vh;
     min-height: 100vh;
     position: relative;
-    width: 100vw;
     transition: opacity 1s;
+    width: 100vw;
 }
+/* background */
 .full-size {
     background-color: var(--bgbody);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='392' height='392' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23212223' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23202122'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"),
     radial-gradient(ellipse farthest-corner at 120% 150%,var(--bgellipse) 20%,transparent 80%);
     /* background by SVGBackgrounds.com */
 }
+
 .tags {
     color: var(--gray);
     font-family: var(--cursive);
     font-size: 13pt;
-    left: 70px;
     margin: 30px;
     margin-bottom: 10px;
-    position: absolute;
 }
 .tags.superior {
+    left: 70px;
+    position: absolute;
     top: 0;
 }
 .tags.inferior {
     bottom: 0;
+    left: 70px;
+    position: absolute;
 }
+
 .content { 
     color: var(--clear);
     transition: all 2s;
@@ -258,18 +310,15 @@ body {
     .full-size {
         min-height: calc(100vh - 55px);
     }
-    .tags.superior {
-        left: 0;
-    }
-    .tags.inferior {
+    .tags.superior, .tags.inferior {
         left: 0;
     }
 }
 .achatado {
-    max-height: 0;
+    height: 0;
     min-height: 0;
-    overflow-y: hidden;
     opacity: 0;
+    overflow-y: hidden;
 }
 
 /* Logo  
@@ -299,9 +348,9 @@ h1 {
     color: var(--gray);
     font-family: var(--monospace);
     margin-bottom: 3rem;
+    padding-bottom: .5rem;
     padding-left: 3rem;
     padding-top: 3rem;
-    padding-bottom: .5rem;
 }
 .cinza {
     color: var(--gray);
@@ -349,7 +398,7 @@ h1 {
     text-decoration: none;
 }
 .home-contact:hover, .home-contact:active {
-	color: var(--bgbody);
 	background-color: var(--featured);
+	color: var(--bgbody);
     text-decoration: none;
 } 
