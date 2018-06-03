@@ -11,3 +11,6 @@
 
 Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)<br>
 ou acesse <code>jimmyfilips.github.io</code>
+
+Made by [jimmyfilips](https://github.com/jimmyfilips/) (under [MIT License](https://github.com/jimmyfilips/jimmyfilips.github.io/blob/master/LICENSE))
+Copyright © 2018 [jimmyfilips](https://github.com/jimmyfilips/)
