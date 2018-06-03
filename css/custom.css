@@ -17,6 +17,7 @@
     
 --navbar: 60px;
 --animation: .4s;
+--pagein: 2s;
 }
 
 body {
@@ -31,6 +32,27 @@ body {
 .crimson-inverse {
 	color: var(--inverse);
 }
+
+/* Button
+------------------------ */
+.sp-btn {
+    border: 1px solid var(--featured);
+    border-radius: 5px;
+	color: var(--featured);
+    display: inline-block;
+    font-family: var(--monospace);
+    line-height: normal;
+    padding: .65rem 1.5rem;
+}
+.sp-btn:enabled {
+	color: var(--featured);
+    text-decoration: none;
+}
+.sp-btn:hover, .sp-btn:active {
+	background-color: var(--featured);
+	color: var(--bgbody);
+    text-decoration: none;
+} 
 
 /* Navbar
 --------------------------------------------------- */
@@ -307,10 +329,9 @@ body {
 .full-size {
     align-items: center;
     display: flex;
-    justify-content: center;
     min-height: 100vh;
     position: relative;
-    transition: opacity 1s;
+    transition: opacity var(--pagein);
     width: 100vw;
 }
 /* background */
@@ -320,13 +341,16 @@ body {
     radial-gradient(ellipse farthest-corner at 120% 150%,var(--bgellipse) 20%,transparent 80%);
     /* background by SVGBackgrounds.com */
 }
+.content { 
+    color: var(--clear);
+    transition: all var(--pagein);
+}
 
 .tags {
     color: var(--gray);
     font-family: var(--cursive);
     font-size: 13pt;
-    margin: 30px;
-    margin-bottom: 10px;
+    margin: 20px 30px 10px 30px;
 }
 .tags.superior {
     left: 70px;
@@ -339,36 +363,51 @@ body {
     position: absolute;
 }
 
-.content { 
-    color: var(--clear);
-    transition: all 2s;
-}
 /* espaçamento a esquerda para evitar que o conteúdo entre atrás do menu*/
-@media only screen and (min-width : 1000px) {
+@media only screen and (min-width : 992px) {
     .content {
         padding-left: 60px;
     }
+    .full-size {
+        min-height: 100vh;
+    }
 }
-@media only screen and (max-width : 992px) {
+/* espaçamento acima evitar que o conteúdo entre atrás do menu*/
+@media only screen and (max-width : 991px) {
     .nav-fake {
-	    height: 55px;
+	    height: var(--navbar);
     }
     .full-size {
-        min-height: calc(100vh - 55px);
+        min-height: calc(100vh - var(--navbar));
     }
     .tags.superior, .tags.inferior {
         left: 0;
     }
 }
+
+/* Anim. de Entrada
+---------------------- */
 .achatado {
     height: 0;
     min-height: 0;
     opacity: 0;
     overflow-y: hidden;
 }
+.page-load {
+    transition: all var(--pagein);
+}
+.page-load effect {
+    height: 0;
+}
+.page-loaded {
+    transition: all var(--pagein);
+}
+.effect {
+    opacity: 0; 
+}
 
-/* Logo  
----------------------- */
+/* Home 
+--------------------------------------------------- */
 h1 {
     margin-top: 0;
 }
@@ -379,7 +418,6 @@ h1 {
     line-height: 7.6rem;
     margin-bottom: 0;
     padding-left: 3rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 .logo .crimson {
     margin-right: .5rem;
@@ -402,49 +440,17 @@ h1 {
     color: var(--gray);
     padding-top: 3rem;
 }
-
-/* Anim. de Entrada
----------------------- */
-.page-load {
-    transition: all 1s;
-}
-.page-load effect {
-    height: 0;
-}
-.page-loaded {
-    opacity: 1; 
-    transition: all 2s;
-}
-.effect {
-    opacity: 0; 
-}
-
-/* Home 
----------------------- */
-@media only screen and (max-height : 625px) and (max-width : 992px) {
-    #home {
-        min-height: 570px;
-    }
-}
-@media only screen and (max-height : 570px) and (min-width : 992px) {
-    #home {
-        min-height: 570px;
-    }
-}
-.home-contact {
-    border: 1px solid var(--featured);
-    border-radius: 5px;
-	color: var(--featured);
-    font-family: var(--monospace);
+#home .sp-btn {
     margin-left: 3rem;
-    padding: .95rem 1.5rem;
 }
-.home-contact:enabled {
-	color: var(--featured);
-    text-decoration: none;
+/* altura minima para a home (evita transposição das tags) */
+@media only screen and (max-height : 570px) and (max-width : 991px) {
+    #home {
+        min-height: calc(570px - var(--navbar));
+    }
 }
-.home-contact:hover, .home-contact:active {
-	background-color: var(--featured);
-	color: var(--bgbody);
-    text-decoration: none;
-} 
+@media only screen and (max-height : 490px) and (min-width : 992px) {
+    #home {
+        min-height: 490px;
+    }
+}
