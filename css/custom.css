@@ -225,12 +225,6 @@ body {
     radial-gradient(ellipse farthest-corner at 120% 150%,var(--bgellipse) 20%,transparent 80%);
     /* background by SVGBackgrounds.com */
 }
-.achatado {
-    max-height: 0;
-    min-height: 0;
-    overflow-y: hidden;
-    opacity: 0;
-}
 .content { 
     color: var(--clear);
     transition: all 2s;
@@ -240,6 +234,20 @@ body {
     .content {
         padding-left: 60px;
     }
+}
+@media only screen and (max-width : 992px) {
+    .nav-fake {
+	    height: 55px;
+    }
+    .full-size {
+        min-height: calc(100vh - 55px);
+    }
+}
+.achatado {
+    max-height: 0;
+    min-height: 0;
+    overflow-y: hidden;
+    opacity: 0;
 }
 
 /* Logo 
