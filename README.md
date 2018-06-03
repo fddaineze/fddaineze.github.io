@@ -9,6 +9,5 @@
 **Conceito**
 * anaglifo 3d (cores de destaque, azul/vermelho)
 
-Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)
-
+Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)<br>
 ou acesse <code>jimmyfilips.github.io</code>
