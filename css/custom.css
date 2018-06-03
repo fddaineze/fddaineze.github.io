@@ -114,14 +114,21 @@ body {
     color: var(--gray);
     display: block;
     font-size: 25px;
+    width: 100%;
+}
+.navbar-center li {
+    text-align: center;
+}
+.navbar-center li:hover {
+    text-align: right;
 }
 .navbar-center a svg {
-    opacity: 1;
     -webkit-transition: all var(--animation) ease-out;
     transition: all var(--animation) ease-out;
+    width: 100%;
 }
 .navbar-center a:hover svg {
-    opacity: 0;
+    width: 0;
 }
 .navbar-center a#home-nav:after {
     content: 'home';
@@ -144,14 +151,14 @@ body {
     justify-content: center;
     left:0;
     letter-spacing: .6px;
-    opacity: 0;
+    overflow-x: hidden;
     position: absolute;
     -webkit-transition: all var(--animation) ease-out;
     transition: all var(--animation) ease-out;
-    width: 100%;
+    width: 0;
 }
 .navbar-center a:hover:after {
-    opacity: 1;
+    width: 100%;
 }
 
 /* Navbar - menu vertical
@@ -290,6 +297,16 @@ body {
 } 
 
 /* Sections
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
+--------------------------------------------------- 
 --------------------------------------------------- */
 .full-size {
     align-items: center;
