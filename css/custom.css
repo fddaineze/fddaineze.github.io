@@ -1,24 +1,26 @@
 :root {
-    --monospace: 'Overpass Mono', monospace; /* menus */
-    --cursive: 'La Belle Aurore', cursive; /* tags */
-    --emphasys: 'Exo 2', sans-serif; /* logo */
-    --pattern: 'open sans', 'segoe ui', sans-serif; /* geral */
-    
-    --featured: #08FDD8;
-    --inverse: #FC0853;
-    
-    --bgcolor: #181818;
-    --bgbody: #252627;
-    --bgblack: #070707;
-    --bgellipse: #111111;
-    
-    --gray: #4D4D4E;
-    --clear: #FFFFFF;
+--monospace: 'Overpass Mono', monospace; /* menus */
+--cursive: 'La Belle Aurore', cursive; /* tags */
+--emphasys: 'Exo 2', sans-serif; /* logo */
+--pattern: 'open sans', 'segoe ui', sans-serif; /* geral */
+
+--featured: #08FDD8;
+--inverse: #FC0853;
+
+--bgcolor: #181818;
+--bgbody: #252627;
+--bgblack: #070707;
+--bgellipse: #111111;
+
+--gray: #4D4D4E;
+--clear: #FFFFFF;
 }
+
 body {
     background-color: var(--bgbody);
     font-family: var(--pattern);
     transition: all 2s;
+    overflow-x: hidden;
 }
 .crimson {
 	color: var(--featured);
@@ -172,6 +174,15 @@ body {
         position: fixed;
         width: 70px;
     }
+    .navbar-custom .navbar-nav > li {
+        float: none;
+        margin-top: 22px;
+        text-align: center;
+        width: 69px;
+    }
+    .navbar-custom .navbar-right > li {
+        margin-top: 0;
+    }
     .navbar-reference {
         height: 100%;
         position: relative;
@@ -179,12 +190,6 @@ body {
     .navbar-footer {
         bottom: 15px;
         position: absolute;
-    }
-    .navbar-custom .navbar-nav > li {
-        float: none;
-        margin-top: 22px;
-        text-align: center;
-        width: 69px;
     }
     .navbar-center {
         height: 80vh;
