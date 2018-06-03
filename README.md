@@ -6,6 +6,7 @@
 **Estrutura**
 * HTML5
 * CSS
+* Flexbox
 * jQuery
 * Bootstrap
 
