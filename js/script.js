@@ -4,6 +4,10 @@ $(document).ready(function () {
     var atual = '#home';
     $(atual+'-nav').addClass('active');
     
+    // Chama o script de maquina de escrever
+    const titulo = document.querySelector('.write');
+    typeWriter(titulo);
+    
     $('.navbar-collapse a[href^="#"]').on('click', function (e) {
         setTimeout(function () {
             if ($('.navbar-toggle').css('display') != 'none') $('.navbar-toggle').trigger("click");
