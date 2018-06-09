@@ -5,6 +5,10 @@ $(document).ready(function () {
     $(atual+'-nav').addClass('active');
     $(atual+'-ball').addClass('active');
     
+    // Chama o script de maquina de escrever
+    const titulo = document.querySelector('.write');
+    typeWriter(titulo);
+    
     $('.navbar-collapse a[href^="#"]').on('click', function (e) {
         setTimeout(function () {
             if ($('.navbar-toggle').css('display') != 'none') $('.navbar-toggle').trigger("click");

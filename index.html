@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt">
 
 <head>
@@ -35,8 +35,14 @@
 
 <body>
     
-    <header class="page-load" style="position:fixed;top:50vh;display:block;width:100vw;text-align:center;color:#4D4D4E;height:0px;">
-        <h3>carregando...</h3>
+    <header class="page-load" style="position:fixed;top:50vh;display:block;width:100vw;text-align:center;height:0px;">
+        <h3 style="display: none">carregando...</h3>
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     
     <div class="page-loaded effect">
@@ -80,24 +86,26 @@
         <div class="nav-fake"></div>
 
         <article class="full-size" id="home">
-            <div class="tags superior" aria-expanded="false">
+            <div class="tags superior">
                 <p>&nbsp;&nbsp;&nbsp;&lt;/head&gt;</p>
                 <p>&nbsp;&nbsp;&nbsp;&lt;body&gt;</p>
             </div>
-            <div class="tags inferior" aria-expanded="false">
+            <div class="tags inferior">
                 <p>&nbsp;&nbsp;&nbsp;&lt;/body&gt;</p>
                 <p>&lt;/html&gt;</p>
             </div>
             <div class="container content">
                 <p class="logo">Hi, i&#39;m</p>
                 <h1 class="logo"><span class="crimson">F</span>ilipe Daineze</h1>
-                <p class="extra">Web Designer | Front End Developer</p>
+                <p class="extra write">Web Designer | Front End Developer</p>
                 <a class="sp-btn" href="#contato">Contact Me</a>
             </div>
         </article>
 
         <section class="full-size achatado" id="skill">
+            <div id="particles-js"></div>
             <div class="container content">
+                <h2>Skills</h2>
                 <p>skill</p>
                 <p>skill</p>
                 <p>skill</p>
@@ -117,7 +125,9 @@
         </section> 
 
         <section class="full-size achatado" id="work">
+            <div id="particles-js"></div>
             <div class="container content">
+                <h2>Works</h2>
                 <p>work</p>
                 <p>work</p>
                 <p>work</p>
@@ -137,7 +147,9 @@
         </section>
 
         <section class="full-size achatado" id="contato">
+            <div id="particles-js"></div>
             <div class="container content">
+                <h2>Contato</h2>
                 <p>contato</p>
                 <p>contato</p>
                 <p>contato</p>
@@ -170,6 +182,21 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript of Bootstrap v3.3.7 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Maquina de escrever -->
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '&nbsp;';
+            
+            setTimeout(function () {
+            elemento.innerHTML = '';
+                textoArray.forEach((letra, i) => {
+                    setTimeout(() => elemento.innerHTML += letra, 85 * i)
+                });
+            }, 1000);
+        }
+    </script>
 </body>
 
 </html>
