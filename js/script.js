@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('.page-loaded').removeClass('effect');
     var atual = '#home';
     $(atual+'-nav').addClass('active');
+    $(atual+'-ball').addClass('active');
     
     $('.navbar-collapse a[href^="#"]').on('click', function (e) {
         setTimeout(function () {
@@ -18,10 +19,12 @@ $(document).ready(function () {
         
         $('.full-size'+atual).addClass('achatado');
         $(atual+'-nav').removeClass('active');
+        $(atual+'-ball').removeClass('active');
         
         atual = id;
         $('.full-size'+atual).removeClass('achatado');
         $(atual+'-nav').addClass('active');
+        $(atual+'-ball').addClass('active');
         
         $('html, body').scrollTop(0);
     });
