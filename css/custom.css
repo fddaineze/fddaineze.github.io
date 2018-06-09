@@ -402,13 +402,37 @@ body {
     .nav-ball-items>li>a:hover, .nav-ball-items>li>a.active {
     background-color: var(--featured);
 }
+    .ball-desc {
+        position: absolute;
+        transform: rotate(-90deg);
+        font-family: var(--cursive);
+        width: calc(var(--navbar) * 4);
+        height: 1px;
+        right: calc(calc(var(--navbar) * 1.5) * -1);
+        display: flex;
+        align-items: center;
+        top: calc(50% - calc(var(--navbar) * 3.2));
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width : 991px) {
+    .nav-ball {
+        margin-top: calc(calc(var(--navbar) * -1) / 2);
+    }
+    .ball-desc {
+        margin-bottom: calc(var(--navbar) * 1.5);
+    }
 }
 /* mobile pendente */
 @media only screen and (max-width : 699px) {
     .nav-ball {
         display: none;
     }
+    .ball-desc {
+        display: none;
+    }
 }
+
 
 /* Sections
 --------------------------------------------------- */
