@@ -1,4 +1,4 @@
-### Site 
+### Site
 **Estrutura** 
 * HTML5 - <https://www.w3.org/TR/html5/>
 * CSS - <https://www.w3.org/TR/CSS/>
