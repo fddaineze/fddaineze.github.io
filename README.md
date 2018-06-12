@@ -6,7 +6,7 @@
 * jQuery 3.3.1 - <http://api.jquery.com/>
 * Bootstrap 3.3.7 - <https://getbootstrap.com/docs/3.3/getting-started/>
 
-**Conceito**
+**Conceito** 
 * anaglifo 3d (cores de destaque, azul/vermelho) 
 
 Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)<br>
