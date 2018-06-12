@@ -13,7 +13,7 @@
 --bgblack: #000001;
 --bgellipse: #111115;
 
---gray: #4D4D4E;
+--gray: #646465;
 --clear: #FEFEFF;
     
 --navbar: 60px;
@@ -23,11 +23,16 @@
 }
 
 html {
-    background-color: var(--bgbody);
+/*    background-color: var(--bgbody);*/
+    background-image: url(https://images.unsplash.com/photo-1525935944571-4e99237764c9?ixlib=rb-0.3.5…EyMDd9&s=c7e5657…&auto=format&fit=crop&w=1051&q=80);
+    background-size: cover;
+    /* https://unsplash.com/photos/f2DL8oI-7N8 */
 }
 body {
-    background-color: var(--bgbody);
-    background-image: radial-gradient(ellipse farthest-corner at 120% 150%,var(--bgellipse) 20%,transparent 80%);
+/*    background-color: var(--bgbody);*/
+/*    background-image: radial-gradient(ellipse farthest-corner at 120% 150%,var(--bgellipse) 20%,transparent 80%);*/
+    background-color: rgba(38,38,48,0.8);
+    /* background-image: radial-gradient(ellipse farthest-corner at 120% 150%,var(--bgellipse) 20%,transparent 80%); */
     font-family: var(--pattern);
     overflow-x: hidden;
     transition: all 2s;
@@ -407,6 +412,7 @@ body {
     background-color: var(--featured);
 }
     .ball-desc {
+        color: var(--gray);
         position: absolute;
         transform: rotate(-90deg);
         font-family: var(--cursive);
