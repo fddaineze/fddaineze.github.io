@@ -1,4 +1,4 @@
-:root { 
+:root {
 --monospace: 'Overpass Mono', monospace; /* menus */
 --cursive: 'La Belle Aurore', cursive; /* tags */
 --emphasys: 'Exo 2', sans-serif; /* logo */
@@ -24,8 +24,9 @@
 
 html {
 /*    background-color: var(--bgbody);*/
-    background-image: url(https://images.unsplash.com/photo-1525935944571-4e99237764c9?ixlib=rb-0.3.5…EyMDd9&s=c7e5657…&auto=format&fit=crop&w=1051&q=80);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
+    background-position: top center;
     /* https://unsplash.com/photos/f2DL8oI-7N8 */
 }
 body {
