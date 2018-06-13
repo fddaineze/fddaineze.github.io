@@ -144,15 +144,17 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     content: " ";
+    transition: all .3s;
+    border-bottom: 5px solid var(--cortema);
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
     color: var(--text-white);
     text-decoration: none;
 }
 .navbar-inverse .navbar-nav>li>a:focus:after, .navbar-inverse .navbar-nav>li>a:hover:after {
-    border-bottom: 5px solid var(--cortema);
+    width: 100%;
 }
 .navbar-right i {
     font-size: 18px;
