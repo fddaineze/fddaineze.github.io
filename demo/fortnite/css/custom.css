@@ -16,8 +16,8 @@
     /* cores gerais */
     --cortema: #E6E600;
     --cortema-2: #1AC2FE;
-    --gradiente-a: #0AAFFA;
-    --gradiente-b: #27CAA2;
+    --gradiente-a: #1AC2FE;
+    --gradiente-b: #1AC2FE;
     
     /* cores de fundo */
     --bg-dark: #2A2A2A;
@@ -80,8 +80,18 @@
 .titulo {
     font-family: var(--fantasy);
     font-size: 3.3rem;
-    font-weight: bold;
+/*    font-weight: bold;*/
+    margin: auto;
     margin-bottom: 6rem;
+    text-transform: uppercase;
+    
+    background-color: var(--cortema-2);
+    margin: 0 auto 6rem auto;
+    padding: 10px;
+    text-align: center;
+    width: 290px;
+    -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
+    clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
 }
 .sub-titulo {
     font-family: var(--feature);
@@ -97,9 +107,10 @@
 .no-space {
     margin-bottom: 1rem;
 }
-.titulo.clear {
+.titulo.clear, .titulo.dark {
 
-    color: var(--cortema);
+    color: var(--text-dark);
+/*
     text-shadow: 
         1px 0 0 var(--text-dark),
         0 1px 0 var(--text-dark),
@@ -109,9 +120,7 @@
         -1px 1px 0 var(--text-dark),
         1px -1px 0 var(--text-dark),
         -1px -1px 0 var(--text-dark);
-}
-.titulo.dark {
-    color: var(--cortema);
+*/
 }
 
 /* Navbar Customização
@@ -189,7 +198,7 @@
     align-items: center;
     background: transparent;
     display: flex;
-    min-height: 50vh;
+    min-height: 80vh;
 } 
 
 /* Opções de compras
@@ -258,14 +267,12 @@
     height:250px;
 }
 .produto-1 {
-/*    background: url(../img/conta-alt.jpg);*/
-    background: url(http://via.placeholder.com/500x250?text=imagem+produto);
+    background: url(../img/regedit.jpg);
     background-position: center;
     background-size: cover;
 }
 .produto-2 {
-/*    background: url(../img/conta-full.jpg);*/
-    background: url(http://via.placeholder.com/500x250?text=imagem+produto);
+    background: url(../img/fps-boost.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -657,7 +664,7 @@
     color: var(--text-clear);
 }
 .quem-somos .sub-titulo {
-    color: var(--cortema-2);
+    color: var(--cortema);
 }
 .quem-somos i {
     font-size: 35pt;
@@ -698,7 +705,7 @@
     width: 100%;
 }
 .etiqueta .ico {
-    color: var(--cortema-2);
+    color: var(--cortema);
     font-size: 26.6pt;
     text-shadow: 
         1px 0 0 rgba(0,0,0,1),
