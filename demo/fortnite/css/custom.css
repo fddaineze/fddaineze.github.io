@@ -335,24 +335,18 @@
     color: var(--vantagens-vermelho);
 }
 .prod-comprar {
-    filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
     background-color: var(--botao-compra-a);
     color: var(--botao-compra-b);
     cursor: pointer;
     display: inline-block;
     font-family: var(--fantasy);
-    font-size: 2rem;
+    font-size: 2em;
+    margin: 1em auto;
     padding: 17px 2em;
     text-align: center;
-/*    transform: skew(4deg) rotateY(3deg) rotateX(-3deg);*/
     transition: all .4s;
-    
-    font-size: 2em;
-    color: #1e1e1e;
-    background-color: #ff0;
     -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
     clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
-    margin: 1em auto;
 }
 .prod-comprar.other {
     -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
@@ -487,7 +481,7 @@
 	color: var(--text-dark);
 	padding: 10px;
     text-align: center;
-    width: 50%;
+    width: 45%;
     margin: 10px auto; 
 }
 
