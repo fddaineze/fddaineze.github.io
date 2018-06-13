@@ -55,6 +55,12 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/aos.css" />
     <script src="js/aos.js"></script>
+    
+    <!-- CAROUSEL
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <script src="dist/owl.carousel.min.js"></script>
 
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -133,7 +139,7 @@
         <article class="section produtos" id="produtos">
             <div class="container">
                 <div class="row text-center">
-                    <h2 class="titulo clear">Opções de compras</h2>
+                    <h2 class="titulo clear no-space">Opções de compras</h2>
 
                     <!-- Coluna 1
                     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -192,7 +198,6 @@
             <div class="container">
                 <div class="row text-center">
                     <h2 class="titulo dark">O que somos?</h2>
-
                     <!-- Coluna 1
                     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
                     <div class="col-md-4">
@@ -250,99 +255,44 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <article class="section perguntas-frequentes" id="perguntas-frequentes">
             <div class="container">
-                <div class="row text-center">
-                    <h2 class="titulo clear">Perguntas Frequentes</h2>
+                <div class="row text-center" data-aos="flip-right">
+                    <h2 class="titulo clear">Depoimentos</h2>
                     
-                    <div class="col-md-6">
-                        <input type="checkbox" name="faq" class="ativador-input" id="faq-1">
-                        <!-- A loja é confiável?
-                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <div class=box-faq data-aos="flip-left">
-                            <label for="faq-1" class="etiqueta">
-                                <span class="ico"><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                <span class="title">A loja é confiável?</span>
-                            </label>
-                            <p class="faq-desc">
-                                Sim. Oferecemos um atendimento todos os dias da semana via e-mail, e contamos com grandes youtubers do cenário que divulgam nossa loja.
-                            </p>
+                    <div class="owl-carousel owl-theme col-sm-8 col-sm-offset-2">
+                        <div class="item">
+                            <p class="sub-titulo">Nome ou Nick</p>
+                            <p class="depoimento">"Texto ou depoimento convincente com cara de que foi realmente um comprador que disse"</p>
                         </div>
-                        
-                        <input type="checkbox" name="faq" class="ativador-input" id="faq-2">
-                        <!-- Meu PC roda o minecraft?
-                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <div class=box-faq data-aos="flip-right">
-                            <label for="faq-2" class="etiqueta">
-                                <span class="ico"><i class="fa fa-cogs" aria-hidden="true"></i></span>
-                                <span class="title">Meu PC roda o minecraft?</span>
-                            </label>
-                            <p class="faq-desc">
-                               <b>Processador:</b> Intel Pentium D or AMD Athlon 64 (K8) 2.6 GHz
-                                <br>
-                                <b>Memória RAM:</b> 2GB
-                                <br>
-                                <b>Placa de Vídeo:</b> Intel HD Graphics or AMD (formerly ATI) Radeon HD Graphics
-                                <br>
-                                <b>Onboard:</b> Nvidia GeForce 9600 GT or AMD Radeon HD 2400 with OpenGL 3.1
-                                <br>
-                                <b>Espaço em disco:</b> 200Mb
-                            </p>
+                        <div class="item">
+                            <p class="sub-titulo">Nome ou Nick</p>
+                            <p class="depoimento">"Texto ou depoimento convincente com cara de que foi realmente um comprador que disse"</p>
                         </div>
-                        
-                        <input type="checkbox" name="faq" class="ativador-input" id="faq-6">
-                        <!-- Não estou conseguindo migrar minha conta. o que eu faço?
-                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <div class=box-faq data-aos="flip-left">
-                            <label for="faq-6" class="etiqueta">
-                                <span class="ico"><i class="fa fa-server" aria-hidden="true"></i></span>
-                                <span class="title">Não estou conseguindo migrar minha conta. o que eu faço?</span>
-                            </label>
-                            <p class="faq-desc">
-                               Em caso de dúvidas, dificuldades ou erros entre em contato imediatamente para que possamos lhe ajudar dá melhor forma possível.
-                            </p>
+                        <div class="item">
+                            <p class="sub-titulo">Nome ou Nick</p>
+                            <p class="depoimento">"Texto ou depoimento convincente com cara de que foi realmente um comprador que disse"</p>
+                        </div>
+                        <div class="item">
+                            <p class="sub-titulo">Nome ou Nick</p>
+                            <p class="depoimento">"Texto ou depoimento convincente com cara de que foi realmente um comprador que disse"</p>
                         </div>
                     </div>
                     
-                    <div class="col-md-6">
-                        
-                        <input type="checkbox" name="faq" class="ativador-input" id="faq-8">
-                        <!-- Posso comprar por boleto?
-                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <div class=box-faq data-aos="flip-right">
-                            <label for="faq-8" class="etiqueta">
-                                <span class="ico"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
-                                <span class="title">Posso comprar por boleto?</span>
-                            </label>
-                            <p class="faq-desc">
-                               Claro! Ambos os métodos de pagamentos fornecem a opção de pagamento via boleto (Este meio de pagamento pode demorar até 3 dias para ser aprovado dependendo única e exclusivamente do banco).
-                            </p>
-                        </div>
-                        
-                        <input type="checkbox" name="faq" class="ativador-input" id="faq-3">
-                        <!-- Quais as formas de pagamento?
-                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <div class=box-faq data-aos="flip-left">
-                            <label for="faq-3" class="etiqueta">
-                                <span class="ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                                <span class="title">Quais as formas de pagamento?</span>
-                            </label>
-                            <p class="faq-desc">
-                               Disponibilizamos ao cliente o MercadoPago & PagSeguro como meios de pagamentos.
-                            </p>
-                        </div>
-                        
-                        <input type="checkbox" name="faq" class="ativador-input" id="faq-5">
-                        <!-- As contas tem garantia?
-                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                        <div class=box-faq data-aos="flip-right">
-                            <label for="faq-5" class="etiqueta">
-                                <span class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></span>
-                                <span class="title">As contas tem garantia?</span>
-                            </label>
-                            <p class="faq-desc">
-                               Nossas contas são testadas mais de uma vez para termos certeza que está tudo nos conformes, porém não nos responsabilizamos por contas hackeadas ou quaisquer erros causados pelo cliente ou terceiros.
-                            </p>
-                        </div>
-                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            $('.owl-carousel').owlCarousel({
+                                loop:true,
+                                autoplay:true,
+                                autoplayTimeout:5000,
+                                autoplayHoverPause:true,
+                                nav:false,
+                                responsive:{
+                                    0:{
+                                        items:1
+                                    }
+                                }
+                            })
+                        })
+                    </script>
                 </div>
             </div>
         </article>

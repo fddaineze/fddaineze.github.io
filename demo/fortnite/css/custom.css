@@ -31,7 +31,7 @@
     
     /* cores fundo - produtos */
     --produto-a: #9BD9F5;
-    --produto-b: #EAEEF5;
+    --produto-b: #F2E9F5;
     
     /* cores da lista de vantagens/itens */
     --vantagens-verde: #77BA00;
@@ -103,6 +103,9 @@
 }
 .extra-space {
     padding-bottom: 6rem;
+}
+.mid-space {
+    margin-bottom: 3rem;
 }
 .no-space {
     margin-bottom: 1rem;
@@ -685,78 +688,27 @@
 /* Perguntas Frequentes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
 .perguntas-frequentes {
-    background-color: var(--bg-clear);
+    background-color: #C8C8D7;
 }
-.ativador-input { 
-    display: none; 
+.owl-carousel {
+    margin-bottom: 3rem;
 }
-.etiqueta {
-    align-content: center;
+.owl-carousel .item {
+    margin-bottom: 3rem;
+    padding: 3rem 0;
     background-color: var(--bg-box);
-    border-radius: 25px;
-    box-shadow: 0 2px 6px rgba(50, 50, 90,.1);
-    cursor: pointer;
-    display: flex;
-    font-size: 1.17em;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 0 25px;
-    transition: all 0.4s;
-    width: 100%;
+    margin: 0 auto;
+    -webkit-clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
+    clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
 }
-.etiqueta .ico {
-    color: var(--cortema);
-    font-size: 26.6pt;
-    text-shadow: 
-        1px 0 0 rgba(0,0,0,1),
-        0 1px 0 rgba(0,0,0,1),
-        -1px 0 0 rgba(0,0,0,1),
-        0 -1px 0 rgba(0,0,0,1),
-        1px 1px 0 rgba(0,0,0,1),
-        -1px 1px 0 rgba(0,0,0,1),
-        1px -1px 0 rgba(0,0,0,1),
-        -1px -1px 0 rgba(0,0,0,1);
-    width:26.6pt;
+.owl-carousel .item .depoimento {
+    font-family: OpenSans, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
 }
-.etiqueta .title {
-    margin: auto 0;
-    margin-left: 10px;
-    width: calc(100% - 26.6pt - 10px);
-}
-.etiqueta:hover {
-  box-shadow: 5px 5px 6px rgba(50, 50, 90,.2);
-/*  transform: translateY(-1px) rotate(-1deg);*/
-}
-.ativador-input:checked + .box-faq .etiqueta {
-  box-shadow: 5px 5px 6px rgba(50, 50, 90,.2);
-/*  transform: translateY(-1px) rotate(-1deg);*/
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin-bottom: 0;
-}
-.faq-desc {
-  background: var(--bg-box);
-  border-radius: 20px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: -4px;
-  max-height: 0;
-  overflow: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
-  transition: all 500ms;
-  width: 100%;
-}
-.ativador-input:checked + .box-faq .faq-desc {
-  border-top: 1px solid var(--text-clear);
-  border-radius: 0 0 20px 20px;
-  box-shadow: 5px 5px 6px rgba(50, 50, 90,.2);
-  padding: 20px;
-}
-.ativador-input:checked + .box-faq .faq-desc {
-  max-height: 200px;
-}
-
 /* Rodapé
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
