@@ -17,7 +17,7 @@
    
     <?php
     #==================================================
-    # LINKS - Por hora apenas isso vai funcionar
+    # LINKS - Por hora apenas isso vai funcionar 
     #==================================================
     $pagseguro-regedit=     "https://pagseguro-regedit";
     $mercadopago-regedit=   "https://mercadopago-regedit";
