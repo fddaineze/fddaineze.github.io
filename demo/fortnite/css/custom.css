@@ -241,13 +241,16 @@
 }
 .box-produto {
     background-color: var(--bg-box);
-    border-radius: 5px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
     margin: 20px auto;
     max-width: 600px;
     padding-bottom: 1px;
     overflow: hidden;
-    
+    -webkit-clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
+    clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
+}
+.box-produto.other {
+    -webkit-clip-path: polygon(0 1%,24% 2%,24% 6%,27% 2%,100% 5%,100% 98%,0% 100%);
+    clip-path: polygon(0 1%,24% 2%,24% 6%,27% 2%,100% 5%,100% 98%,0% 100%);
 }
 .prod-header {
     background-color: var(--cortema);
@@ -307,7 +310,6 @@
     background-image: -moz-linear-gradient(right, var(--gradiente-a), var(--gradiente-b) 80%);
     background-image: -o-linear-gradient(right, var(--gradiente-a), var(--gradiente-b) 80%);
     background-image: linear-gradient(to left, var(--gradiente-a), var(--gradiente-b) 80%);
-    border-radius: 30px;
     color: white;
     font-size: 13pt;
     font-weight: bold;
@@ -315,6 +317,12 @@
     padding: 10px;
     text-align: center;
     width: 190px;
+    -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
+    clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
+}
+.vantagens .destaque.other {
+    -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
+    clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
 }
 .vantagens .texto {
     border-bottom: 1px solid var(--vantagens-divisor);
@@ -334,16 +342,25 @@
     display: inline-block;
     font-family: var(--fantasy);
     font-size: 2rem;
-    margin: 30px auto;
-    padding: 17px;
+    padding: 17px 2em;
     text-align: center;
-    text-transform: uppercase;
-    width: 180px;
-    transform: skew(4deg) rotateY(3deg) rotateX(-3deg);
+/*    transform: skew(4deg) rotateY(3deg) rotateX(-3deg);*/
     transition: all .4s;
+    
+    font-size: 2em;
+    color: #1e1e1e;
+    background-color: #ff0;
+    -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
+    clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
+    margin: 1em auto;
 }
-.prod-comprar:hover {
-    transform: skew(4deg) rotateY(3deg) rotateX(-3deg) rotate3d(0, 1, 0, -15deg);
+.prod-comprar.other {
+    -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
+    clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
+}
+.prod-comprar:hover, .prod-comprar.other:hover {
+    -webkit-clip-path: polygon(0 0%,100% 0%,100% 100%,0 100%);
+    clip-path: polygon(0 0%,100% 0%,100% 100%,0 100%);
 }
 @media (min-width: 992px) {
     .gold-box {
