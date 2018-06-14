@@ -713,7 +713,7 @@
     padding-bottom: 0;
 }
 .owl-dot span {
-    background: var(--bg-dark);	
+    background: var(--bg-dark) !important;	
 }
 /* Rodapé
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
