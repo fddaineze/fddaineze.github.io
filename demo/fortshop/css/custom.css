@@ -713,10 +713,10 @@
     padding-bottom: 0;
 }
 .owl-dot span {
-    background: var(--bg-dark) !important;	
+    background: #869791 !important;	
 }
 .owl-dot span:hover, .owl-dot.active span {
-    background: #869791 !important;	
+    background: var(--bg-dark) !important;	
 }
 /* Rodapé
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
