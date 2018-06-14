@@ -715,6 +715,9 @@
 .owl-dot span {
     background: var(--bg-dark) !important;	
 }
+.owl-dot span:hover, .owl-dot.active span {
+    background: #D6D6D6 !important;	
+}
 /* Rodapé
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
