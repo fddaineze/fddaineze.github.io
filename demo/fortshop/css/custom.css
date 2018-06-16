@@ -463,7 +463,7 @@
     border-radius: 5px;
     position: relative;
     overflow: auto;
-    max-height: 90vh;
+    max-height: 70vh;
 }
 .prod-opcoes.form-contato {
     padding:0;
