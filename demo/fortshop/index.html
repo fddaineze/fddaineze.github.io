@@ -310,7 +310,7 @@
                 <p data-close class="prod-opcoes-close">X</p>
                 <p class="titulo clear no-space">REGEDIT</p>
                 <div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="prod-opcoes-box prod-opcoes-box-space">
                             <p class="sub-titulo">Opção 1</p>
                             <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
@@ -323,7 +323,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="prod-opcoes-box">
                             <p class="sub-titulo">Opção 2</p>
                             <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
@@ -333,6 +333,19 @@
 		                        <input type="hidden" name="produto" value="regedit" />
                                 <!--<input name="codigo" type="text" class="prod-codigo" placeholder="cupom desconto">-->
                                 <input type="submit" name="Comprar" value="Comprar" class="botao-pagseguro" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 3</p>
+                            <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                            
+                            <form method="get" action="processar-compra.php" target="_blank">
+		                        <input type="hidden" name="loja" value="paypal" />
+		                        <input type="hidden" name="produto" value="regedit" />
+                                <!--<input name="codigo" type="text" class="prod-codigo" placeholder="cupom de desconto">-->
+                                <input type="submit" name="Comprar" value="Comprar" class="botao-mercadopago" />
                             </form>
                         </div>
                     </div>
