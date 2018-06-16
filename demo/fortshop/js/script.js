@@ -3,9 +3,12 @@ $(document).ready(function () {
     ---------------------------------------------------- */
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
-        /* Fecha o nav mobile ao clique */
-        if ($('.navbar-collapse').css('display') != 'none') {
-            $('.navbar-toggle').trigger("click");
+        /* Fecha o nav mobile ao clique (por https://github.com/jimmyfilips) */
+        const mq = window.matchMedia( "(max-width: 767px)" );
+        if (mq.matches) {
+            if ($('.navbar-collapse').css('display') != 'none') {
+                $('.navbar-toggle').trigger("click");
+            }
         }
 
         /* Navega suavemente até o link */

@@ -343,6 +343,9 @@
 .vantagens .fa-remove {
     color: var(--vantagens-vermelho);
 }
+.vantagens .fa-question-circle {
+    color: var(--cortema-2);
+}
 .prod-comprar {
     background-color: var(--botao-compra-a);
     color: var(--botao-compra-b);
@@ -415,6 +418,41 @@
     text-align: center;
     font-size: 7pt;
     font-weight: bold;
+}
+/* descrição técnica */
+.ativador-input {
+    display: none;
+}
+.desc-texto { 
+    transition: all .4s;
+    max-height: 0;
+    overflow: hidden;
+    color: var(--bg-box);
+}
+.ativador-input:checked + 
+.ativador-desc .desc-texto {
+    max-height: 200px; 
+    color: var(--text-dark);
+}
+.desc-titulo {
+    transition: all .4s;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 100;
+}
+.ativador-input:checked + 
+.ativador-desc .desc-titulo {
+    margin-bottom: 15px;
+}
+.desc-titulo::after {
+    content:'+';
+    float: right;
+    margin-left: 15px;
+    transition: transform .3s ease;
+}
+.ativador-input:checked + 
+.ativador-desc .desc-titulo::after {
+    transform: rotate(45deg) scale(1.08);
 }
 
 /* Modals
