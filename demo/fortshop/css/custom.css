@@ -438,7 +438,7 @@
     transition: all .4s;
     cursor: pointer;
     margin: 0;
-    font-weight: 100;
+    font-weight: 400;
 }
 .ativador-input:checked + 
 .ativador-desc .desc-titulo {
