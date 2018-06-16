@@ -424,6 +424,7 @@
     display: none;
 }
 .desc-texto { 
+    line-height: 2.5rem;
     transition: all .4s;
     max-height: 0;
     overflow: hidden;
