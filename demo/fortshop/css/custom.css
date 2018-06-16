@@ -735,7 +735,7 @@
     background-image: -moz-linear-gradient(right, #C8C8D7, var(--bg-clear) 80%);
     background-image: -o-linear-gradient(right, #C8C8D7, var(--bg-clear) 80%);
     background-image: linear-gradient(to right, #C8C8D7, var(--bg-clear) 80%);
-}
+} 
 .owl-carousel {
     margin-bottom: 3rem;
 }
