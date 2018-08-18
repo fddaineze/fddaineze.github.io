@@ -5,7 +5,7 @@
 *** Website: https://github.com/jimmyfilips
 **********************************************************
 */ 
-:root {
+:root { 
     /* Fontes */
     --fantasy: 'Ranchers', cursive;/*old*/
     --fantasy: 'Slackey', cursive;/*old*/
@@ -40,7 +40,7 @@
     /* cores da lista de vantagens/itens */
     --vantagens-verde: #77BA00;
     --vantagens-vermelho: #D12525;
-    --vantagens-divisor: #E0E0E0;
+    --vantagens-divisor: #222132;
     
     /* selo de promoção */
     --selo: #EDE74E;
@@ -48,7 +48,7 @@
     --selo-texto: #8B8F29;
     
     /* botao de compra dos itens */
-    --botao-compra-a: #E87D48;
+    --botao-compra-a: #F26522;
     --botao-compra-b: #141A24;
     
     /* botao de fechar do modal (opções de compra e contato) */
@@ -198,7 +198,7 @@ html, body {
     background-size: cover;
 }
 .inicio img {
-    margin: 2rem auto;
+    margin: 6rem auto;
     max-width: 650px;
     width: 100%;
 }
@@ -261,15 +261,32 @@ html, body {
     background-image: url(../img/texture-bw.png);
 }
 .box-produto {
-    background-color: var(--bg-box);
     margin: 20px auto;
     max-width: 600px;
     padding-bottom: 1px;
     overflow: hidden;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.box-produto-in {
+    z-index: -1;
+	background-image: url(../img/shine.webp);
+    -webkit-filter: hue-rotate(45deg);
+    filter: hue-rotate(45deg);
 /*
-    -webkit-clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
-    clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .15;
+    background-size: cover;
+    background-color: #342e5b;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 .box-produto.other {
 /*
@@ -345,6 +362,21 @@ html, body {
     clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
 */
 }
+.vantagens .destaque:before {
+    content: "";
+    background: rgba(96,93,140,.18);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    -webkit-transform: skewX(39deg);
+    transform: skewX(39deg);
+    z-index: -1;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.05);
+}
+}
 .vantagens .destaque.other {
 /*
     -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
@@ -380,17 +412,43 @@ html, body {
     clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
 */
 }
-.prod-comprar.other {
-/*
-    -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
-    clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
-*/
+.prod-comprar:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
 }
-.prod-comprar:hover, .prod-comprar.other:hover {
-/*
+.prod-comprar:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+.prod-comprar:active:after {
+  opacity: 0;
+}
+.prod-comprar.other {
     -webkit-clip-path: polygon(0 0%,100% 0%,100% 100%,0 100%);
     clip-path: polygon(0 0%,100% 0%,100% 100%,0 100%);
-*/
+}
+.prod-comprar:hover, .prod-comprar.other:hover {
+    -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
+    clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
 }
 @media (min-width: 992px) {
     .gold-box {
@@ -789,12 +847,34 @@ html, body {
 .owl-carousel .item {
     margin-bottom: 3rem;
     padding: 3rem 0;
-    background-color: var(--bg-box);
+/*    background-color: var(--bg-box);*/
     margin: 0 auto;
-/*
-    -webkit-clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
-    clip-path: polygon(0 5%,24% 4%,24% 7%,27% 4%,100% 0,100% 100%,0 98%);
-*/
+}
+.owl-carousel .item-in {
+    z-index: -1;
+	background-image: url(../img/shine.webp);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .15;
+    background-size: cover;
+    background-color: #342e5b;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.owl-carousel .item-in.one { 
+    -webkit-filter: hue-rotate(45deg);
+    filter: hue-rotate(45deg);
+}
+.owl-carousel .item-in.two { 
+    -webkit-filter: hue-rotate(25deg);
+    filter: hue-rotate(25deg);
+}
+.owl-carousel .item-in.three { 
+    -webkit-filter: hue-rotate(75deg);
+    filter: hue-rotate(75deg);
 }
 .owl-carousel .item .depoimento {
     font-family: OpenSans, sans-serif;
@@ -808,7 +888,7 @@ html, body {
     background: #869791 !important;	
 }
 .owl-dot span:hover, .owl-dot.active span {
-    background: var(--bg-dark) !important;	
+    background: var(--cortema) !important;	
 }
 /* Rodapé
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
