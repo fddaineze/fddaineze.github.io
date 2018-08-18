@@ -15,24 +15,26 @@
     --feature: 'Quantico', sans-serif;
     
     /* cores gerais */
-    --cortema: #FFAF00;
+    --cortema: #E87D48;
     --cortema-2: #97B8D7;
     --gradiente-a: #97B8D7;
     --gradiente-b: #97B8D7;
     
     /* cores de fundo */
-    --bg-dark: #161A1D;
-    --bg-clear: #C5D0D9;
+    --bg-dark: #1B1929;
+    --bg-clear: #1F1D2F;
     --bg-box: rgba(0, 0, 0, 0.6);
+    --bg-border: #222132;
     
     /* cores de texto */
     --text-dark: #2A2A2A;
-    --text-clear: #E5E5E5;
+    --text-clear: #C4C2D6;
     --text-white: #F7F8FB;
     
     /* cores fundo - produtos */
-    --produto-a: #232D35;
-    --produto-b: #C5D0D9;
+    --produto-a: #412B2E;
+    --produto-b: #11101a;
+    --produto-c: #202139;
     
     /* cores da lista de vantagens/itens */
     --vantagens-verde: #77BA00;
@@ -45,7 +47,7 @@
     --selo-texto: #8B8F29;
     
     /* botao de compra dos itens */
-    --botao-compra-a: #FFAF00;
+    --botao-compra-a: #E87D48;
     --botao-compra-b: #141A24;
     
     /* botao de fechar do modal (opções de compra e contato) */
@@ -76,7 +78,7 @@ html, body {
     max-width: 100vw;
 }
 .section {
-    padding: 6rem 0;
+    padding: 0 0 6rem 0;
     text-align: center;
 }
 .box {
@@ -86,15 +88,14 @@ html, body {
     font-family: var(--fantasy);
     font-size: 3.3rem;
 /*    font-weight: bold;*/
-    margin: auto;
-    margin-bottom: 6rem;
     text-transform: uppercase;
-    
-    background-color: var(--cortema-2);
-    margin: 0 auto 6rem auto;
-    padding: 10px;
+    border-top: 1px solid var(--bg-border);
+    border-bottom: 1px solid var(--bg-border);
+    background-color: var(--bg-clear);
+    margin: 0 0 6rem 0;
+    padding: 10px 0 10px 0;
     text-align: center;
-    width: 290px;
+    width: 100%;
 /*    -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);*/
 /*    clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);*/
 }
@@ -117,7 +118,7 @@ html, body {
 }
 .titulo.clear, .titulo.dark {
 
-    color: var(--text-dark);
+    color: var(--text-clear);
 /*
     text-shadow: 
         1px 0 0 var(--text-dark),
@@ -187,29 +188,17 @@ html, body {
 
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
-.fullscreen-div__video {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background: url(../img/poster-image.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: -100;
-}
-.fullscreen-bg__video {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -99;
-    background: url(../img/poster-image.jpg) no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
-}
 .spacing {
-	height: 2rem;
+	height: 3rem;
+}
+.inicio {
+    background-color: #181727;
+    background-size: 164px;
+    background-position: 0 0;
+    background-image: url(../img/bgloop.png);
 }
 .inicio img {
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 650px;
     width: 100%;
 }
@@ -222,9 +211,10 @@ html, body {
 }
 .parallax-window {
     align-items: center;
-    background: transparent;
+/*    background: transparent;*/
     display: flex;
-    min-height: 100vh;
+/*    min-height: 50vh;*/
+    
 } 
 
 /* Opções de compras
@@ -264,15 +254,13 @@ html, body {
 
 /* Produtos
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.produto-bg-color {
+    background-color: var(--bg-dark);
+}
 .produtos {
-/*    background-blend-mode: darken;*/
+    background-blend-mode: darken;
 /*    background-color: var(--bg-clear);*/
-/*    background-image: url(../img/texture-bw.png);*/
-    background-color: var(--produto-a);
-    background-image: -webkit-linear-gradient(top, var(--produto-a), var(--produto-b) 80%);
-    background-image: -moz-linear-gradient(top, var(--produto-a), var(--produto-b) 80%);
-    background-image: -o-linear-gradient(top, var(--produto-a), var(--produto-b) 80%);
-    background-image: linear-gradient(to top, var(--produto-a), var(--produto-b) 80%);
+    background-image: url(../img/texture-bw.png);
 }
 .box-produto {
     background-color: var(--bg-box);
@@ -757,6 +745,10 @@ html, body {
 .quem-somos {
     background-color: var(--bg-dark);
     color: var(--text-clear);
+    background-image: -webkit-linear-gradient(top, var(--produto-a), var(--produto-b) 80%);
+    background-image: -moz-linear-gradient(top, var(--produto-a), var(--produto-b) 80%);
+    background-image: -o-linear-gradient(top, var(--produto-a), var(--produto-b) 80%);
+    background-image: linear-gradient(to top, var(--produto-a), var(--produto-b) 80%);
 }
 .quem-somos .sub-titulo {
     color: var(--cortema);
@@ -780,11 +772,18 @@ html, body {
 /* Perguntas Frequentes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
 .perguntas-frequentes {
-    background-color: #C8C8D7;
-    background-image: -webkit-linear-gradient(right, #C8C8D7, var(--bg-clear) 80%);
-    background-image: -moz-linear-gradient(right, #C8C8D7, var(--bg-clear) 80%);
-    background-image: -o-linear-gradient(right, #C8C8D7, var(--bg-clear) 80%);
-    background-image: linear-gradient(to right, #C8C8D7, var(--bg-clear) 80%);
+    background-color: var(--bg-dark);
+    background-image: -webkit-linear-gradient(right, var(--produto-c), var(--produto-b) 80%);
+    background-image: -moz-linear-gradient(right, var(--produto-c), var(--produto-b) 80%);
+    background-image: -o-linear-gradient(right, var(--produto-c), var(--produto-b) 80%);
+    background-image: linear-gradient(to right, var(--produto-c), var(--produto-b) 80%);
+/*
+    background-color: var(--bg-dark);
+    background-image: -webkit-linear-gradient(top, var(--produto-c), var(--produto-b) 80%);
+    background-image: -moz-linear-gradient(top, var(--produto-c), var(--produto-b) 80%);
+    background-image: -o-linear-gradient(top, var(--produto-c), var(--produto-b) 80%);
+    background-image: linear-gradient(to top, var(--produto-c), var(--produto-b) 80%);
+*/
 } 
 .owl-carousel {
     margin-bottom: 3rem;
