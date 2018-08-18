@@ -157,7 +157,7 @@ html, body {
 .navbar-inverse {
     background-color: var(--bg-dark);
     border-bottom: 0;
-}
+} 
 .navbar-inverse .navbar-nav>li>a:after, .navbar-inverse .navbar-nav>li>a:after {
     position: absolute;
     bottom: 0;
