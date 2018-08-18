@@ -489,7 +489,7 @@ html, body {
     border-radius: 5px;
     position: relative;
     overflow: auto;
-    max-height: 76vh;
+    max-height: 76vh; 
 }
 .prod-opcoes.form-contato {
     padding:0;
