@@ -152,8 +152,7 @@ html, body {
     font-size: 11px;
 }
 .navbar-custom a:hover {
-    color: (--cortema-2);
-    text-decoration: none;
+/*    color: (--cortema-2);*/
 }
 .navbar-inverse {
     background-color: var(--bg-dark);
@@ -169,8 +168,10 @@ html, body {
     border-bottom: 5px solid var(--cortema);
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: var(--text-white);
+    color: #5E1D2F;
+    color: #B1562A;
     text-decoration: none;
+    
 }
 .navbar-inverse .navbar-nav>li>a:focus:after, .navbar-inverse .navbar-nav>li>a:hover:after {
     width: 100%;
@@ -267,6 +268,7 @@ html, body {
     overflow: hidden;
     position: relative;
     background-color: rgba(0, 0, 0, 0.85);
+    transition: all .23s;
 }
 .box-produto-in {
     z-index: -1;
@@ -288,11 +290,9 @@ html, body {
     background-repeat: no-repeat;
     background-position: left;
 }
-.box-produto.other {
-/*
-    -webkit-clip-path: polygon(0 1%,24% 2%,24% 6%,27% 2%,100% 5%,100% 98%,0% 100%);
-    clip-path: polygon(0 1%,24% 2%,24% 6%,27% 2%,100% 5%,100% 98%,0% 100%);
-*/
+.box-produto:hover .box-produto-in {
+    -webkit-filter: hue-rotate(25deg);
+    filter: hue-rotate(25deg);
 }
 .prod-header {
     background-color: var(--cortema);
@@ -339,32 +339,18 @@ html, body {
 /*    background-color: var(--bg-box);*/
     padding: 10px 25px;
     padding-bottom: 0;
+    padding-top: 6rem;
     margin-bottom: 0;
 }
 .vantagens .vant-space { 
     margin-bottom: 0 
 }
 .vantagens .destaque {
-    background-color: var(--gradiente-a);
-    background-image: -webkit-linear-gradient(right, var(--gradiente-a), var(--gradiente-b) 80%);
-    background-image: -moz-linear-gradient(right, var(--gradiente-a), var(--gradiente-b) 80%);
-    background-image: -o-linear-gradient(right, var(--gradiente-a), var(--gradiente-b) 80%);
-    background-image: linear-gradient(to left, var(--gradiente-a), var(--gradiente-b) 80%);
-    color: white;
-    font-size: 13pt;
-    font-weight: bold;
-    margin: -33px auto 40px auto;
-    padding: 10px;
-    text-align: center;
-    width: 190px;
-/*
-    -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
-    clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
-*/
+    
 }
 .vantagens .destaque:before {
     content: "";
-    background: rgba(96,93,140,.18);
+    background: rgba(96,93,140,.10);
     position: absolute;
     top: 0;
     left: 0;
@@ -375,12 +361,50 @@ html, body {
     transform: skewX(39deg);
     z-index: -1;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,.05);
+    transition: all .2s; 
 }
-.vantagens .destaque.other {
-/*
-    -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
-    clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
-*/
+.box-produto:hover .vantagens .destaque:before {
+    width: 101%;
+    height: 101%;
+}
+.destaque-back {
+    -webkit-transform: skewX(45deg);
+    transform: skewX(45deg);
+    width: 100%;
+    height: 40px;
+    background: #0E0B1E;
+    position: absolute;
+    top: 230px;
+    left: 20%;
+    overflow: hidden;
+}
+.destaque-back:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.13);
+    background: 
+        linear-gradient( to right, 
+            rgba(255, 255, 255, 0.03) 0%, 
+            rgba(255, 255, 255, 0.13) 20%, 
+            rgba(255, 255, 255, 0.2) 30%, 
+            rgba(255, 255, 255, 0.0) 80%);
+    top: 0;
+    left: 0;
+}
+.destaque-text {
+    font-size: 13pt;
+    font-weight: bold;
+    margin: -33px auto 40px auto;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 260px;
+    left: 0;
+    z-index: 10;
 }
 .vantagens .texto {
     border-bottom: 1px solid var(--vantagens-divisor);
