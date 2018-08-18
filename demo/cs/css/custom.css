@@ -71,8 +71,9 @@
 
 /* Padrões
 –––-–––––––––––––––––––––––––––––––––––––––––––––– */
-body {
+html, body {
     color: var(--text-clear);
+    max-width: 100vw;
 }
 .section {
     padding: 6rem 0;
@@ -198,8 +199,6 @@ body {
     width: 100%;
     object-fit: cover;
     z-index: -100;
-    right: 0;
-    bottom: 0;
     background: url(../img/poster-image.jpg) no-repeat center center;
     background-size: cover;
     overflow: hidden;
