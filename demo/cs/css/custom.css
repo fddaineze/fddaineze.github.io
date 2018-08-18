@@ -559,7 +559,7 @@ html, body {
     width: 45%;
     margin: 10px auto; 
 }
-
+ 
 .botao-mercadopago {
     border: 0;
 	color: var(--botao-mercadopago-texto);
