@@ -345,9 +345,7 @@ html, body {
 .vantagens .vant-space { 
     margin-bottom: 0 
 }
-.vantagens .destaque {
-    
-}
+.vantagens .destaque {}
 .vantagens .destaque:before {
     content: "";
     background: rgba(96,93,140,.10);
