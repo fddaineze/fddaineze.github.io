@@ -188,17 +188,19 @@ html, body {
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .fullscreen-div__video {
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
     background: url(../img/poster-image.jpg) no-repeat center center;
     background-size: cover;
+    z-index: -100;
 }
 .fullscreen-bg__video {
     position: fixed;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: -100;
+    z-index: -99;
     background: url(../img/poster-image.jpg) no-repeat center center;
     background-size: cover;
     overflow: hidden;
