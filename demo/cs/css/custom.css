@@ -193,9 +193,8 @@ html, body {
 }
 .inicio {
     background-color: #181727;
-    background-size: 164px;
-    background-position: 0 0;
-    background-image: url(../img/bgloop.png);
+    background-image: url(../img/purple.jpg);
+    background-size: cover;
 }
 .inicio img {
     margin: 2rem auto;
@@ -258,8 +257,6 @@ html, body {
     background-color: var(--bg-dark);
 }
 .produtos {
-    background-blend-mode: darken;
-/*    background-color: var(--bg-clear);*/
     background-image: url(../img/texture-bw.png);
 }
 .box-produto {
