@@ -376,7 +376,6 @@ html, body {
     z-index: -1;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,.05);
 }
-}
 .vantagens .destaque.other {
 /*
     -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
