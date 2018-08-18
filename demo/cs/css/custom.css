@@ -24,6 +24,7 @@
     --bg-dark: #1B1929;
     --bg-clear: #1F1D2F;
     --bg-box: rgba(0, 0, 0, 0.6);
+    --bg-box2: rgba(27, 25, 41, 0.9);
     --bg-border: #222132;
     
     /* cores de texto */
@@ -483,7 +484,7 @@ html, body {
 /* Modals 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .prod-opcoes {
-    background-color:var(--bg-box);
+    background-color:var(--bg-box2);
     padding:20px;
     border-radius: 5px;
     position: relative;
