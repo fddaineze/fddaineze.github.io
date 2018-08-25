@@ -215,8 +215,8 @@ html, body {
     left: 0;
     width: 100%;
     height: calc(100% + 2px);
-    -webkit-transform: skewX(26deg);
-    transform: skewX(26deg);
+    -webkit-transform: skewX(-26deg);
+    transform: skewX(-26deg);
     opacity: .27;
     z-index: -1;
     transition: all .5s;
@@ -361,12 +361,6 @@ html, body {
     left: -2%;
     transition: all .5s;
 }
-.svg-produto {
-    position: absolute;
-    height: 60px;
-    top: 220px;
-    left: calc(50% - 98px);
-}
 .prod-header {
     background-color: var(--cortema);
 /*    border-radius: 10px 10px 0 0;*/
@@ -418,7 +412,6 @@ html, body {
 .vantagens .vant-space { 
     margin-bottom: 0 
 }
-.vantagens .destaque {}
 .vantagens .destaque:before {
     content: "";
     background: rgba(96,93,140,.10);
@@ -443,11 +436,12 @@ html, body {
     transform: skewX(45deg);
     width: 100%;
     height: 40px;
-    background: #0E0B1E;
+    background-image: linear-gradient(145deg,rgba(37, 24, 40,.3),rgba(94, 37, 34,0)),linear-gradient(90deg,#f99019,#ff2758);
     position: absolute;
     top: 230px;
     left: 20%;
     overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.78);
 }
 .destaque-back:after {
     content: "";
@@ -455,12 +449,20 @@ html, body {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.13);
+/*
     background: 
         linear-gradient( to right, 
             rgba(255, 255, 255, 0.03) 0%, 
             rgba(255, 255, 255, 0.13) 20%, 
             rgba(255, 255, 255, 0.2) 30%, 
             rgba(255, 255, 255, 0.0) 80%);
+*/
+    background: 
+        linear-gradient( to right, 
+            rgba(0, 0, 0, 0.3) 0%, 
+            rgba(0, 0, 0, 0.33) 20%, 
+            rgba(0, 0, 0, 0.32) 30%, 
+            rgba(0, 0, 0, 0.3) 80%);
     top: 0;
     left: 0;
 }
@@ -490,60 +492,53 @@ html, body {
 .vantagens .fa-question-circle {
     color: var(--cortema-2);
 }
+
+.svg-prod-comprar {
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    top: calc(50% - 30px);
+    left: 0;
+    transition: all 1s;
+}
 .prod-comprar {
-    background-color: var(--botao-compra-a);
-    color: var(--botao-compra-b);
     cursor: pointer;
     display: inline-block;
     font-family: var(--fantasy);
     font-size: 2em;
-    margin: 1em auto;
-    padding: 17px 2em;
+    margin: 1.3em auto 1.6em auto;
+    padding: 10px;
+    position: relative;
     text-align: center;
     transition: all .4s;
-/*
-    -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
-    clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
-*/
+    width: 200px;
+    height: 60px;
+    transition: all .4s;
+    color: var(--text-clear) important;
+}
+.prod-comprar:hover {
+    color: white !important;
 }
 .prod-comprar:after {
-  content: "";
-  position: absolute;
-  top: -110%;
-  left: -210%;
-  width: 200%;
-  height: 200%;
-  opacity: 0;
-  transform: rotate(30deg);
-  
-  background: rgba(255, 255, 255, 0.13);
-  background: linear-gradient(
-    to right, 
-    rgba(255, 255, 255, 0.13) 0%,
-    rgba(255, 255, 255, 0.13) 77%,
-    rgba(255, 255, 255, 0.5) 92%,
-    rgba(255, 255, 255, 0.0) 100%
-  );
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient( to right, 
+        rgba(255, 255, 255, 0) 10%, 
+        rgba(255, 255, 255, 0.13) 50%, 
+        rgba(255, 255, 255, 0.0) 90%);
+    top: 0;
+    left: 50%;
+    transition: all .4s;
 }
 .prod-comprar:hover:after {
-  opacity: 1;
-  top: -30%;
-  left: -30%;
-  transition-property: left, top, opacity;
-  transition-duration: 0.7s, 0.7s, 0.15s;
-  transition-timing-function: ease;
+    width: 160px;
+    left: 20px;
+    transition: all .4s;
 }
-.prod-comprar:active:after {
-  opacity: 0;
-}
-.prod-comprar.other {
-    -webkit-clip-path: polygon(0 0%,100% 0%,100% 100%,0 100%);
-    clip-path: polygon(0 0%,100% 0%,100% 100%,0 100%);
-}
-.prod-comprar:hover, .prod-comprar.other:hover {
-    -webkit-clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
-    clip-path: polygon(0 0%,100% 7%,100% 95%,0 100%);
-}
+
 @media (min-width: 992px) {
     .gold-box {
         transform: translate(0,-15px);
