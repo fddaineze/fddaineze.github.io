@@ -441,7 +441,7 @@ html, body {
     top: 230px;
     left: 20%;
     overflow: hidden;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.78);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.78); 
 }
 .destaque-back:after {
     content: "";
