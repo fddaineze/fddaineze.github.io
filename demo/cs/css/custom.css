@@ -479,6 +479,15 @@ html, body {
     left: 0;
     z-index: 10;
 }
+@media (min-width: 768px) {
+    .destaque-back.left {
+        background-image: linear-gradient(145deg,rgba(94, 37, 34,0),rgba(37, 24, 40,.3)),linear-gradient(90deg,#ff2758,#f99019);
+        -webkit-transform: skewX(-45deg);
+        transform: skewX(-45deg);
+        right: 20%;
+        left: auto;
+    }
+}
 .vantagens .texto {
     border-bottom: 1px solid var(--vantagens-divisor);
     padding-bottom: 10px;
