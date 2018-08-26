@@ -501,7 +501,6 @@ html, body {
 .vantagens .fa-question-circle {
     color: var(--cortema-2);
 }
-
 .svg-prod-comprar {
     position: absolute;
     height: 60px;
@@ -547,7 +546,6 @@ html, body {
     left: 20px;
     transition: all .4s;
 }
-
 @media (min-width: 992px) {
     .gold-box {
         transform: translate(0,-15px);
