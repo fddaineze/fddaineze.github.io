@@ -5,7 +5,7 @@
 *** Website: https://github.com/jimmyfilips
 **********************************************************
 */ 
-:root { 
+:root {  
     /* Fontes */
     --fantasy: 'Ranchers', cursive;/*old*/
     --fantasy: 'Slackey', cursive;/*old*/
@@ -919,6 +919,29 @@ html, body {
     .quem-somos img {
         margin-bottom: 40px;
     }
+}
+
+.parceiros-box .avatar {
+    width: 140px;
+    margin: 0 auto;
+}
+.parceiros-box .nome {
+    margin-top: 7px;
+    font-size: 20pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+.parceiros-box .subs, .parceiros-box .views {
+    font-size: 12pt;
+    font-weight: bold;
+}
+.parceiros-box .subs i, .parceiros-box .views i {
+    font-size: 12pt;
+}
+.parceiros-box .avatar svg path {
+    stroke: var(--cortema);
+    stroke: linear-gradient(90deg,#ff9069,rgba(220,28,103,.9)) !important;
 }
 
 /* Perguntas Frequentes
