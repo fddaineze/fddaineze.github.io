@@ -133,6 +133,68 @@ html, body {
 */
 }
 
+.section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #c6c4d8;
+    text-transform: uppercase;
+    overflow-x: hidden;
+    border-bottom: 1px solid rgba(75,74,106,.4);
+}
+.section-title-arrow-left {
+    border-left: 4px solid #ff4700;
+}
+.section-title-arrow-right {
+    border-right: 4px solid #ff4700;
+}
+.section-title-arrow-left, .section-title-arrow-right {
+    display: inline-block;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+.section-title-text {
+    min-height: 27px;
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.section-title-arrow-left:before {
+    left: -3px;
+}
+.section-title-arrow-right:before {
+    right: -3px;
+}
+.section-title-arrow-left:before, .section-title-arrow-right:before {
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 10px 2px rgba(255,71,0,.9);
+}
+.section-title-arrow-left:after {
+    right: 4px;
+    background: linear-gradient(270deg,#ff4700,rgba(227,66,5,0));
+}
+.section-title-arrow-right:after {
+    left: 4px;
+    background: linear-gradient(90deg,#ff4700,rgba(227,66,5,0));
+}
+.section-title-arrow-left:after, .section-title-arrow-right:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    width: 44px;
+    height: 2px;
+    opacity: .19;
+}
+
 /* Navbar Customização
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .navbar-custom {
