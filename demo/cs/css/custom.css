@@ -766,6 +766,9 @@ body {
 
 /* Modals 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.md-box {
+     z-index: 10;
+}
 .prod-opcoes {
     background-color: var(--bg-box2);
     padding: 20px;
