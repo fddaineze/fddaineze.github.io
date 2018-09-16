@@ -373,6 +373,49 @@ body {
     font-size: 7pt;
     font-weight: bold;
 }
+.titulo.compras {
+margin-left: auto;
+    margin-right: auto;
+    background-color: var(--cortema);
+    -webkit-clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
+    clip-path: polygon(0 10%,100% 0,100% 98%,0 95%);
+    padding: 15px 10px;
+    text-align: center;
+    width: 290px;
+    transform: rotate(-1deg);
+    margin-bottom: 3.5rem;
+}
+
+/* descrição do vip */
+.ativador-input {
+    display: none;
+}
+.desc-texto { 
+    line-height: 2.5rem;
+    transition: all .4s;
+    max-height: 0;
+    overflow: hidden;
+    color: var(--bg-box);
+    padding-bottom: 0 !important;
+}
+.ativador-input:checked + 
+.ativador-desc .desc-texto {
+    max-height: 200px; 
+    color: var(--text-dark);
+    padding-bottom: 20px !important;
+}
+.desc-titulo {
+    transition: all .4s;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 400;
+     width: 100%;
+    padding-top: 10px;
+} 
+.ativador-input:checked + 
+.ativador-desc .desc-titulo {
+    margin-bottom: 15px;
+}
 
 /* Modals
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -563,15 +606,11 @@ a.botao-pagseguro:active {
 /* Nossos Parceiros
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .parceiros {
-    background-color: var(--bg-dark);
-    color: var(--text-supaclear);
-    background-image: -webkit-linear-gradient(top, var(--parceiros-a), var(--parceiros-b) 80%);
-    background-image: -moz-linear-gradient(top, var(--parceiros-a), var(--parceiros-b) 80%);
-    background-image: -o-linear-gradient(top, var(--parceiros-a), var(--parceiros-b) 80%);
-    background-image: linear-gradient(to top, var(--parceiros-a), var(--parceiros-b) 80%);
+    background-color: var(--bg-supaclear);
+    color: var(--text-dark);
 }
 .parceiros .sub-titulo {
-    color: var(--cortema-b);
+    color: var(--text-dark);
 }
 .parceiros i {
     font-size: 35pt;
@@ -609,7 +648,7 @@ a.botao-pagseguro:active {
     font-size: 12pt;
 }
 .parceiros-box .avatar svg path {
-    stroke: var(--parceiros-stroke);
+    stroke: var(--cortema);
 }
 .yt-nome {
 /*    text-shadow: 0 0 10px var(--cortema-b);*/
@@ -620,7 +659,7 @@ a.botao-pagseguro:active {
 }
 .parceiros-box a:hover .yt-nome {
 /*    text-shadow: 0 0 15px var(--cortema-b2);*/
-    color: var(--cortema-b2);
+    color: var(--cortema);
 }
 
 /* Perguntas Frequentes
