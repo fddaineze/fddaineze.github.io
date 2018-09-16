@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Página de Exemplo</title>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Estatística Descritiva</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#entradasSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tipos de Entrada</a>
+                    <ul class="collapse list-unstyled" id="entradasSubmenu">
+                        <li>
+                            <a href="#">Dados Brutos</a>
+                        </li>
+                        <li>
+                            <a href="#">Classes Definidas</a>
+                        </li>
+                        <li>
+                            <a href="#">Regressão Linear (X e Y)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="reset-entrada">Limpar Dados</a>
+                </li>
+                <li>
+                    <a href="#" id="simule-entrada">Simular Entrada</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://jimmyfilips.github.io/demo/estatistica/" class="download">Veja no Github</a>
+                </li>
+                <li>
+                    <a href="https://github.com/jimmyfilips/" class="github">Veja outros Projetos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+
+                    <div>
+                        <p class="navbar-nav ml-auto">
+                            &copy; 2018
+                        </p>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>Entrada de dados</h2>
+            <p>Use os botões de '+' e '-' para adicionar ou remover campos de dados. Experimente também as opções "Limpar dados" e "Simular dados" no menu. Após adicionar dados, ao clicar fora de um campo, utilizar a tecla tab ou interagir com outros campos, o processo é executado automaticamente</p>
+            
+            <div class="fluid-options">
+
+                <p>
+                    <span class="campo" data-entrada></span> 
+                    <button type="button" id="data-add-entrada" class="btn add-entrada btn-tema">+</button> 
+                    <button type="button" id="data-rem-entrada" class="btn rem-entrada btn-tema">-</button>
+                </p>
+
+                <p>
+                    <button class="btn btn-tema" id="reset-entrada-2">Limpar</button>
+                    <button class="btn btn-tema" id="processar-dados">Processar</button>
+                </p>
+            </div>
+               
+            <p class="box-entradas" data-entrada-box></p> 
+            
+            <p class="box-rol" data-rol>Aguardando Dados...</p>
+            
+            <p class="box-rol" data-entrada-error>...</p>
+
+            <div class="line"></div>
+
+            <h2>Tabela de Distribuição de Frequência</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <div style="overflow-x:auto;">
+                <table class="tabela-frequencia">
+                    <tr>
+                        <th>i</th>
+                        <th>xi</th> 
+                        <th>xi²</th> 
+                        <th>fi</th>
+                        <th>fri</th>
+                        <th>xifi</th>
+                        <th>xi²fi</th>
+                        <th>Fi</th>
+                        <th>Fri</th>
+                        <th>di</th>
+                        <th>|di|</th>
+                        <th>|di|fi</th>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="line"></div>
+
+            <h2>Medidas de Tendência Central</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        <hr>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
