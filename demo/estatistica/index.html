@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Página de Exemplo</title>
+    <title>Estatística Descritiva</title>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -119,8 +119,58 @@
             <h2>Tabela de Distribuição de Frequência</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
+            <div>
+                <button href="#tabFreqLegenda" data-toggle="collapse" aria-expanded="false" class="btn btn-tema" style="    margin: 0 0 1rem 1rem;">Ver legenda</button>
+                <div class="collapse" id="tabFreqLegenda" style="overflow-x:auto;">
+                    <table class="tabela-frequencia nostretch">
+                        <tr>
+                            <th>-</th>
+                            <th>Descrição</th> 
+                            <th>Fórmula</th> 
+                        </tr>
+                        <tr>
+                            <td>xi</td> 
+                            <td class="toleft"><strong>X</strong>: Relativo ao valor da posição "i"</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>fi</td>
+                            <td class="toleft"><strong>Frequência</strong>: Quantas vezes este valor aparece</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>fri</td>
+                            <td class="toleft"><strong>Frequência relativa</strong>: Valor de "fi" dividido pela soma de "xi"</td>
+                            <td>fi / &sum;xi</td>
+                        </tr>
+                        <tr>
+                            <td>Fi</td>
+                            <td class="toleft"><strong>Frequência acumulada</strong>: Valor de "fi" somado ao "Fi" anterior</td>
+                            <td>FiAnterior + fi</td>
+                        </tr>
+                        <tr>
+                            <td>Fri</td>
+                            <td class="toleft"><strong>Frequência acumulada relativa</strong>: representado apenas como Fi/&sum;fi</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>di</td>
+                            <td class="toleft"><strong>Medida de dispersão</strong>: Verifica o quão distante o valor está da média</td>
+                            <td>xi - <span style="text-decoration: overline;">x</span></td>
+                        </tr>
+                        <tr>
+                            <td>|di|</td>
+                            <td class="toleft"><strong>Medida de dispersão</strong>: Valor de "di" convertido para positivo em todos os casos</td>
+                            <td>se di &lt; 0, |di| = di * (-1)</td>
+                        </tr>
+                    </table>
+            
+                    <div class="line"></div>
+                </div>
+            </div>
+            
             <div style="overflow-x:auto;">
-                <table class="tabela-frequencia">
+                <table class="tabela-frequencia" data-tabela-frequencia>
                     <tr>
                         <th>i</th>
                         <th>xi</th> 

@@ -267,29 +267,31 @@ a.github:hover {
 
 .tabela-frequencia {
     border-collapse: collapse;
-    min-width: 100%;
+    min-width: 99%;
     text-align: center;
 }
-
 .tabela-frequencia td, #tabela-frequencia th {
     border: 1px solid var(--claro-d);
     padding: 8px;
-    min-width: 3rem;
+    min-width: 4rem;
 }
-
-.tabela-frequencia tr:nth-child(even){
-    background-color: var(--claro-b);
-}
-
 .tabela-frequencia tr:hover {
     background-color: var(--claro-d);
 }
-
 .tabela-frequencia th {
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: var(--extra-a);
     color: white;
+}
+.tabela-frequencia .tab-freq-soma {
+	background-color: var(--claro-d);
+}
+.tabela-frequencia.nostretch {
+    min-width: auto;
+}
+.tabela-frequencia .toleft {
+    text-align: left;
 }
 
 /* ---------------------------------------------------
