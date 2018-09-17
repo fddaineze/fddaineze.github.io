@@ -296,7 +296,7 @@ a.github:hover {
 .tabela-resultados { 
     display: flex;
 }
-
+ 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -333,6 +333,10 @@ a.github:hover {
     
     .tabela-resultados {
         display: block;
+        text-align: center;
+    }
+    
+    .box-entradas {
         text-align: center;
     }
 }
