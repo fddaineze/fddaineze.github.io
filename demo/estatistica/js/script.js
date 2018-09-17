@@ -246,9 +246,9 @@ $(document).ready(function () {
         }
 
         //dados.sort(); 
-		dados.sort(function(a, b) {
-			return a - b;
-		});
+	dados.sort(function(a, b) {
+	    return a - b;
+	});
 		
         const object = document.querySelector('[data-rol]');
         object.innerHTML = 'ROL: ';
