@@ -245,7 +245,7 @@ $(document).ready(function () {
             }
         }
 
-        //dados.sort();
+        //dados.sort(); 
 		dados.sort(function(a, b) {
 			return a - b;
 		});
