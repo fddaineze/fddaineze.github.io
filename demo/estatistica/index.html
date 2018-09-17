@@ -117,7 +117,7 @@
             <div class="line"></div> 
 
             <h2>Tabela de Distribuição de Frequência</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>A tabela abaixo demonstra os dados de forma AGRUPADA e SEM CLASSE (Discreta). É possível visualizar a LEGENDA de cada item descrito na tabela através do botão abaixo.</p>
             
             <div>
                 <button href="#tabFreqLegenda" data-toggle="collapse" aria-expanded="false" class="btn btn-tema" style="    margin: 0 0 1rem 1rem;">Ver legenda</button>
@@ -204,8 +204,47 @@
             
             <div class="line"></div>
 
-            <h2>Medidas de Tendência Central</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Resultados</h2>
+            <div style="display: flex;">
+                <table class="tabela-frequencia nostretch d-inline-block m-2">
+                    <caption class="text-center">Medidas de tendência central</caption>
+                    <tr>
+                        <td>Média</td> 
+                        <td><span style="text-decoration: overline;">x</span></td>
+                        <td><span data-saida-media>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Moda</td>
+                        <td>Mo</td>
+                        <td><span data-saida-moda>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mediana</td>
+                        <td>Md</td>
+                        <td><span data-saida-mediana>-</span></td>
+                    </tr>
+                </table>
+
+                <table class="tabela-frequencia nostretch d-inline-block m-2">
+                    <caption class="text-center">Medidas de Dispersão</caption>
+                    <tr>
+                        <td>Desvio Médio</td> 
+                        <td>Dm</td>
+                        <td><span data-saida-desvio-medio>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Variância</td>
+                        <td>S²</td>
+                        <td><span data-saida-variancia>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Desvio Padrão</td>
+                        <td>S</td>
+                        <td><span data-saida-desvio-padrao>-</span></td>
+                    </tr>
+                </table>
+            </div>
+
 
             <div class="line"></div>
 

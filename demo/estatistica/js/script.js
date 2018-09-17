@@ -20,7 +20,32 @@ $(document).ready(function () {
 
     //  Dados Brutos - Processar
     // ***********************************
-    function criarTabela(dados) {
+
+    function criarCabecalho(tabelaObj) {
+        tabelaObj.innerHTML =
+            '<tr>' +
+            '<th>i</th>' +
+            '<th>xi</th>' +
+            '<th>xi²</th>' +
+            '<th>fi</th>' +
+            '<th>fri</th>' +
+            '<th>xifi</th>' +
+            '<th>xi²fi</th>' +
+            '<th>Fi</th>' +
+            '<th>Fri</th>' +
+            '<th>di</th>' +
+            '<th>|di|</th>' +
+            '<th>|di|fi</th>' +
+            '</tr>';
+    }
+
+    function atualizarResultados(dados) {
+        // ---------------------------------------
+        // TABELA DE FREQUENCIA
+        // ---------------------------------------
+        const tabelaObj = document.querySelector('[data-tabela-frequencia]');
+        criarCabecalho(tabelaObj);
+
         var xi = [],
             fi = [],
             xi2 = [],
@@ -37,6 +62,7 @@ $(document).ready(function () {
             friSoma = 0,
             xifiSoma = 0,
             xi2fiSoma = 0,
+            diMedSoma = 0,
             diMedfiSoma = 0,
             posicao;
 
@@ -67,42 +93,26 @@ $(document).ready(function () {
             if (i == 0) {
                 Fi[i] = fi[i];
             } else {
-                Fi[i] = Fi[i-1] + fi[i];
+                Fi[i] = Fi[i - 1] + fi[i];
             }
         }
 
         // Calculo de Média
         // -----------------------------------
         var Media = xifiSoma / fiSoma;
-        console.log('MEDIA: ' + Media);
-        
+
         // Segunda Leitura - Relativos
         // É feita para processar os itens que precisam de somatoria
         // E para organizar os dados na tabela
         // -----------------------------------
-        const tabelaObj = document.querySelector('[data-tabela-frequencia]');
-        tabelaObj.innerHTML =
-            '<tr>' +
-            '<th>i</th>' +
-            '<th>xi</th>' +
-            '<th>xi²</th>' +
-            '<th>fi</th>' +
-            '<th>fri</th>' +
-            '<th>xifi</th>' +
-            '<th>xi²fi</th>' +
-            '<th>Fi</th>' +
-            '<th>Fri</th>' +
-            '<th>di</th>' +
-            '<th>|di|</th>' +
-            '<th>|di|fi</th>' +
-            '</tr>';
 
         for (var i = 0; i < xi.length; i++) {
             ii = i + 1; // ii é apenas visual
-            fri[i] = (fi[i] / fiSoma)*100;
+            fri[i] = (fi[i] / fiSoma) * 100;
             friSoma += fri[i];
             di[i] = (xi[i] - Media).toFixed(2);
             diMed[i] = Math.abs(di[i]);
+            diMedSoma += Number(diMed[i]);
             diMedfi[i] = (diMed[i] * fi[i]).toFixed(2);
             diMedfiSoma += Number(diMedfi[i]);
 
@@ -112,7 +122,7 @@ $(document).ready(function () {
                 '<td>' + xi[i] + '</td>' +
                 '<td>' + xi2[i] + '</td>' +
                 '<td>' + fi[i] + '</td>' +
-                '<td>' + fri[i] + '%</td>' +
+                '<td>' + Number(fri[i]).toFixed(1) + '%</td>' +
                 '<td>' + xifi[i] + '</td>' +
                 '<td>' + xi2fi[i] + '</td>' +
                 '<td>' + Fi[i] + '</td>' +
@@ -130,15 +140,92 @@ $(document).ready(function () {
             '<td>' + xiSoma + '</td>' +
             '<td>' + xi2Soma + '</td>' +
             '<td>' + fiSoma + '</td>' +
-            '<td>' + friSoma + '%</td>' +
+            '<td>' + Number(friSoma).toFixed(1) + '%</td>' +
             '<td>' + xifiSoma + '</td>' +
             '<td>' + xi2fiSoma + '</td>' +
             '<td> - </td>' +
             '<td> - </td>' +
             '<td> - </td>' +
-            '<td> - </td>' +
+            '<td>' + Number(diMedSoma).toFixed(1) + '</td>' +
             '<td>' + diMedfiSoma + '</td>' +
             '</tr>';
+        
+        // ---------------------------------------
+        // TABELA DE MEDIDAS DE TENDENCIA CENTRAL
+        // ---------------------------------------
+        
+        // Media
+        // ---------
+        const saidaMedialObj = document.querySelector('[data-saida-media]');
+        saidaMedialObj.innerHTML = Media;
+        
+        var maiorfi = 0,
+            maiorpos,
+            maiorcont = 0;
+        
+        for (var i = 0; i < fi.length; i++) {
+            if (fi[i] == maiorfi) {
+                maiorcont++;
+            }
+            if (fi[i] > maiorfi) {
+                maiorfi = fi[i];
+                maiorpos = i;
+                maiorcont = 1;
+            } 
+        }
+        
+        // Moda
+        // ---------
+        const saidaModaObj = document.querySelector('[data-saida-moda]');
+        if (maiorcont > 1 && maiorfi > 1) {
+            saidaModaObj.innerHTML = 'bimodal+';
+        }
+        if (maiorcont > 1 && maiorfi == 1) {
+            saidaModaObj.innerHTML = 'amodal';
+        }
+        if (maiorcont == 1) {
+            saidaModaObj.innerHTML = xi[maiorpos];
+        }
+        
+        // Mediana
+        // ---------
+        const saidaMedianaObj = document.querySelector('[data-saida-mediana]');
+        var base = fiSoma/2,
+            linha = 0;
+        
+        for (var i = 0; i < Fi.length; i++) {
+            console.log(Fi[i] + ' / ' + base)
+            if (Fi[i] >= base) {
+                mediana = xi[i];
+                break;
+            }
+        }
+        saidaMedianaObj.innerHTML = mediana;
+        
+        // ---------------------------------------
+        // TABELA DE MEDIDAS DE DISPERSÃO
+        // ---------------------------------------
+        
+        // Desvio Medio
+        // ---------
+        const saidaDesvioMedioObj = document.querySelector('[data-saida-desvio-medio]');
+        var dm = diMedfiSoma/fiSoma;
+        saidaDesvioMedioObj.innerHTML = dm.toFixed(2);
+        
+        // Variancia
+        // ---------
+        const saidaVariancia = document.querySelector('[data-saida-variancia]');
+        var s2 = 
+            (xi2fiSoma / fiSoma) - 
+            ((xifiSoma / fiSoma) * (xifiSoma / fiSoma));
+        saidaVariancia.innerHTML = s2.toFixed(2);
+        
+        // Desvio Padrao
+        // ---------
+        const saidaDesvioPadrao = document.querySelector('[data-saida-desvio-padrao]');
+        var s = Math.sqrt(s2);
+        saidaDesvioPadrao.innerHTML = s.toFixed(2);
+        
     }
 
     function processarDados() {
@@ -176,7 +263,7 @@ $(document).ready(function () {
                 objecterro.innerHTML += erros[i];
             }
         }
-        criarTabela(dados);
+        atualizarResultados(dados);
     }
 
     //  Dados Brutos - Atualizar contador
