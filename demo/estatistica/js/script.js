@@ -245,7 +245,11 @@ $(document).ready(function () {
             }
         }
 
-        dados.sort();
+        //dados.sort();
+		dados.sort(function(a, b) {
+			return a - b;
+		});
+		
         const object = document.querySelector('[data-rol]');
         object.innerHTML = 'ROL: ';
         for (var i = 0; i < dados.length; i++) {
