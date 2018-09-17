@@ -293,6 +293,9 @@ a.github:hover {
 .tabela-frequencia .toleft {
     text-align: left;
 }
+.tabela-resultados { 
+    display: flex;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -326,5 +329,10 @@ a.github:hover {
 
     #sidebarCollapse span {
         display: none;
+    }
+    
+    .tabela-resultados {
+        display: block;
+        text-align: center;
     }
 }
