@@ -630,6 +630,7 @@ a.botao-pagseguro:active {
 .parceiros-box .avatar {
     width: 140px;
     margin: 0 auto;
+    padding: 0; 
 }
 .parceiros-box .nome {
     margin-top: 7px;
@@ -649,6 +650,28 @@ a.botao-pagseguro:active {
 }
 .parceiros-box .avatar svg path {
     stroke: var(--cortema);
+}
+.parceiros-box .avatar img {
+    width:88%; 
+    height:88%; 
+    padding:0; 
+    margin:0 auto 7px auto; 
+    border:4px solid var(--cortema); 
+    border-radius:50%;
+}
+.verificado {
+    background-color: var(--cortema);
+    border-radius: 100%;
+    /* font-size: 3px !important; */
+    color: white;
+    padding: 4px 3px 2px 3px;
+    position: absolute;
+    top: 1px;
+    right: 75px;
+    box-shadow: 2px 2px 1px #1f8b65;
+}
+.verificado i {
+    font-size: 20pt !important;
 }
 .yt-nome {
 /*    text-shadow: 0 0 10px var(--cortema-b);*/
