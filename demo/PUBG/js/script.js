@@ -25,7 +25,7 @@ $(document).ready(function () {
     ---------------------------------------------------- */
     // Ao carregar o html ele cria style básico
     // gerando o alinhamento e tamanho necessário
-    const body = document.querySelector('body');
+    const body = document.querySelector('body'); 
     $('body').prepend(
         '<style type="text/css">' +
         '.md-box{' +
