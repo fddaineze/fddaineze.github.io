@@ -17,7 +17,7 @@ $(document).ready(function () {
         }, 500);
     });
     $('a[data-md^="janela"]').on('click', function (e) {
-        if ($('.navbar-toggle').css('display') != 'none') {
+        if ($('.navbar-collapse').css('display') != 'none') {
             $('.navbar-toggle').trigger("click");
         }
     });

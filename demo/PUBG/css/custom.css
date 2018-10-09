@@ -219,20 +219,26 @@ body {
   top:0;
 }
 .modal_compra {
-  display:none;
-  width: 90%;
-  max-width:500px;
-  position:fixed;
-  left:0;
-  top:0;
-  background:#FFF;
-  z-index:100;
-  padding:20px;
-  border-radius:5px;
+    display:none;
+    width: 90%;
+    max-width:500px;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:100;
+    padding:20px;
+    border-radius:5px;
     margin: 0 5%;
 }
 .prod-close {
     cursor: pointer;
+}
+@media (max-width: 992px) {
+    .md-content {
+        max-height: 80vh;
+        overflow-y:auto;
+    }
 }
 
 /* Produtos
@@ -536,7 +542,7 @@ body {
 .prod-opcoes-box {
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    padding: 10px 0;
+    padding: 10px 0 20px 0;
     border-radius: 5px;
 }
 a.botao-mercadopago {
