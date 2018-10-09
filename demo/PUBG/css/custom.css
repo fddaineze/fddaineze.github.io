@@ -248,16 +248,16 @@ body {
     width: 100%;
     height: 20px;
     position: absolute;
-    bottom: -30px;
+    top: -10px;
     left: 0;
     background-image: url(../img/barbed-wire.png);
     background-size: contain;
 }
 .produtos {
-/*    background-blend-mode: darken;*/
     background-color: #ebebeb;
     background-image: url(../img/plate.jpg);
     background-size: cover;
+    position: relative;
 }
 .box-produto {
     background-color: #F9FBFA;
