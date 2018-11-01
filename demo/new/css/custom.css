@@ -1,0 +1,26 @@
+/*
+**********************************************************
+*** Cliente: Cavaleiro (Zeus)
+*** Projeto: Website/E-commerce
+*** Autor: JimmyFilips
+*** Website: https://github.com/jimmyfilips
+**********************************************************
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Coda|Teko');
+/*
+font-family: 'Coda', cursive;
+font-family: 'Teko', sans-serif;
+*/
+
+:root {
+    --font-family-text: 'Coda', cursive;
+    --font-family-titulo: 'Teko', sans-serif;
+}
+body {
+    padding-top: 56px;
+}
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+                0 4px 8px 0 rgba(0,0,0,.05);
+}
