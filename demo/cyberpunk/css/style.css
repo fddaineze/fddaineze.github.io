@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech');
   
 :root {
     /* Fonte- */
-    --fonte: 'Montserrat', sans-serif;
+    /*--fonte: 'Montserrat', sans-serif;*/
+    --fonte: 'Share Tech', sans-serif;
     --fonte-cor: #dadada;
-    --fonte-tam: .998em;
+    --fonte-tam: 1.18em;
     --fonte-tav: 0.89em;
     --fonte-wei: 300;
-    --fonte-hei: 2.02em;
+    --fonte-hei: 2.22em;
 
     /*  cores */
     --claro-a: #fff;
