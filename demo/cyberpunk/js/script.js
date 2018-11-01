@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // ------------------------------------------
-    //  Funções de Menu
+    //  Funções de Menu -
     // ------------------------------------------
 
     $("#sidebar").mCustomScrollbar({
