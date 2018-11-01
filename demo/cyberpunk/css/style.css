@@ -16,7 +16,7 @@
     --claro-d: #27293D;
     --escuro-a: #27293D;
     --escuro-b: #1a1d32;
-    --escuro-c: #3E454C;
+    --escuro-c: #d465e8;
     --extra-a: #1a1d32;
     --extra-ab: rgba(74, 136, 221, 0.65);
     --extra-b: #fff;
@@ -266,7 +266,7 @@ a.github:hover {
     content: '';
     width: 100%;
     height: 1px;
-    margin-top: 1em;
+    margin-top: .92em;
     background-color: var(--escuro-c);
 }
 .campo {  
