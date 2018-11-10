@@ -110,22 +110,22 @@ header .carousel-item {
 .headerh.carousel-content,
 .headerh.carousel-content .carousel-item {
     background-color: var(--bg-color);
-    height: calc(var(--header-height) + 40px);
+    height: var(--header-height);
 }
 .headerh{
-    clip-path: url(#headerclip);
-    margin-bottom: -40px;
+}
+svg defs clipPath circle {
+    cx: calc(50vw - 10px);
+    r: 40px;
 }
 .carousel-indicators {
-    bottom: 50px;
-}
-carousel-bottom { 
+    bottom: 10px;
 }
 .carousel-control-bottom {   
     display: block;
     position: absolute;
-    bottom: calc(-50% + 24.5px);
-    left: calc(50% - 17px);
+    bottom: -45px;
+    left: calc(50% - 15px);
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -133,7 +133,9 @@ carousel-bottom {
     -ms-flex-pack: center;
     justify-content: center;
     width: 30px;
-    height: 100%;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    z-index: 15
     color: #fff;
     text-align: center;
     opacity: 0.5; 
