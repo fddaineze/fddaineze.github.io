@@ -161,7 +161,7 @@ header .carousel-item {
 .carousel-caption {
     position: relative;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 100%;
     height: var(--header-height);
     font-family: var(--font);
