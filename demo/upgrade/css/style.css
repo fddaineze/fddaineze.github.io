@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech');
 
 :root {
     --font: 'Roboto', sans-serif;
+    --font-tech: 'Share Tech', sans-serif;
     --bg-color: #272727;
     --dark-color: #1d1d1d;
+    --gray-bg: #737373;
     --danger: #b62325;
     --color-base: rgba(255, 255, 255, 0.3);
     --header-height: 70vh;
@@ -11,6 +14,7 @@
     --p-dot-size: 6px;
     --l-carousel-control-size: 35px;
     --p-carousel-control-size: 20px;
+    --clear-color: rgba(255, 255, 255, 0.79);
 }
 
 /* **************************************************** 
@@ -24,17 +28,20 @@ body {
 .bg-dark {
     background-color: var(--dark-color) !important;
 }
+
 .bg-danger {
     background-color: var(--danger) !important;
 }
+
 .title-danger {
     font-family: var(--font);
     color: var(--danger);
     text-shadow: 0 0 2px var(--dark-color),
-                 0 0 15px var(--danger);
+        0 0 15px var(--danger);
     font-weight: normal;
     text-transform: uppercase
 }
+
 .title-desc {
     font-family: var(--font);
     color: var(--color-base);
@@ -50,15 +57,21 @@ body {
     color: var(--danger);
     border-color: var(--danger);
 }
-.btn-outline-danger:not([disabled]):not(.disabled):active, .btn-outline-danger:not([disabled]):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle {
+
+.btn-outline-danger:not([disabled]):not(.disabled):active,
+.btn-outline-danger:not([disabled]):not(.disabled).active,
+.show > .btn-outline-danger.dropdown-toggle {
     color: #fff;
     background-color: var(--danger);
     border-color: var(--danger);
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
-.btn-outline-danger:focus, .btn-outline-danger.focus {
+
+.btn-outline-danger:focus,
+.btn-outline-danger.focus {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
+
 .btn-outline-danger:hover {
     color: #fff;
     background-color: var(--danger);
@@ -74,8 +87,9 @@ body {
     padding: 0 20px;
     color: var(--danger);
     text-shadow: 0 0 20px var(--danger),
-                 0 0 5px var(--danger);
+        0 0 5px var(--danger);
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
@@ -106,22 +120,19 @@ header .carousel-item {
     width: var(--l-carousel-control-size);
     height: var(--l-carousel-control-size);
 }
-.headerh, 
+
+.headerh,
 .headerh.carousel-content,
 .headerh.carousel-content .carousel-item {
     background-color: var(--bg-color);
     height: var(--header-height);
 }
-.headerh{
-}
-svg defs clipPath circle {
-    cx: calc(50vw - 10px);
-    r: 40px;
-}
+
 .carousel-indicators {
     bottom: 10px;
 }
-.carousel-control-bottom {   
+
+.carousel-control-bottom {
     display: block;
     position: absolute;
     bottom: -45px;
@@ -135,21 +146,228 @@ svg defs clipPath circle {
     width: 30px;
     height: 60px;
     border-radius: 0 30px 30px 0;
-    z-index: 15
-    color: #fff;
+    z-index: 15 color: #fff;
     text-align: center;
-    opacity: 0.5; 
-    transform:rotate(90deg);
+    opacity: 0.5;
+    transform: rotate(90deg);
     background: black;
 }
+
 .carousel-control-bottom .carousel-control-next-icon {
-        width: var(--p-carousel-control-size);
-        height: var(--p-carousel-control-size);
+    width: var(--p-carousel-control-size);
+    height: var(--p-carousel-control-size);
 }
+
+.carousel-caption {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    font-family: var(--font);
+    color: rgba(255, 255, 255, 0.65);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5),
+        0 4px 8px rgba(0, 0, 0, .5);
+}
+
+.carousel-caption h3 {
+    font-family: var(--font-tech);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption h3 {
+        font-size: 2.7rem !important;
+        width: 70%;
+    }
+}
+
+/* **************************************************** 
+** PRODUTOS
+**************************************************** */
+
+.produtos {
+    background-color: var(--dark-color);
+    font-family: var(--font);
+}
+
+.box-produto {
+    background-color: var(--bg-color);
+    margin: 20px auto;
+    padding-bottom: 1px;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.prod-header {
+    background-color: var(--bg-color);
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+}
+
+.prod-1,
+.prod-2,
+.prod-3 {
+    background-size: cover;
+    background-position: center;
+}
+
+.prod-1 {
+    background-image: url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=500&h=300&fit=crop);
+}
+
+.prod-2 {
+    background-image: url(https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=500&h=300&fit=crop);
+}
+
+.prod-3 {
+    background-image: url(https://images.unsplash.com/photo-1505739648877-581d0adc9fd3?w=500&h=300&fit=crop);
+}
+
+.prod-preco {
+    font-size: 2em;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-top: -20px;
+}
+
+.vantagens {
+    background-color: var(--gray-bg);
+    padding: 10px 25px;
+    color: var(--clear-color);
+}
+
+.vantagens .destaque {
+    background-color: #13C3B7;
+    background-image: -webkit-linear-gradient(left, #b62325, #6d1617 80%);
+    background-image: -o-linear-gradient(left, #b62325, #6d1617 80%);
+    background-image: linear-gradient(to left, #b62325, #6d1617 80%);
+    border-radius: 30px;
+    color: white;
+    font-size: 13pt;
+    font-weight: bold;
+    margin: -33px auto 40px auto;
+    padding: 10px;
+    text-align: center;
+    width: 190px;
+}
+
+.vantagens .texto {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #646464;
+}
+
+.prod-comprar {
+    border: 2px solid var(--danger);
+    color: var(--danger);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 2px var(--dark-color),
+        0 0 15px var(--danger);
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.prod-comprar:hover {
+    background-color: var(--danger);
+    color: #fff;
+    box-shadow: 0 0 4px var(--dark-color),
+        0 0 15px var(--danger);
+}
+
+@media (min-width: 992px) {
+    .gold-box {
+        transform: translate(0, -15px);
+    }
+
+    .gold-destaque {
+        height: 230px;
+    }
+}
+
+.selo {
+    border-bottom: 15px solid #EDE74E;
+    border-left: 15px solid transparent;
+    border-right: 10px solid #EDE74E;
+    border-top: 15px solid #EDE74E;
+
+    height: 0;
+    position: relative;
+    top: 10px;
+    transform: rotate(-90deg);
+    width: 70px;
+}
+
+.selo .selo-nome {
+    color: #8B8F29;
+    font-size: 8pt;
+    font-weight: bold;
+    margin-top: -7px;
+}
+
+.selo .selo-nome::after {
+    border-left: 6px solid #C3C752;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    content: ' ';
+    height: 0;
+    left: 42px;
+    position: absolute;
+    top: 18px;
+    transform: rotate(90deg);
+    width: 0;
+    z-index: -50;
+}
+
+/* **************************************************** 
+** PRODUTOS
+**************************************************** */
+
+.video-container {
+    position: relative;
+    padding-bottom: 54.25%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .video-container {
+        padding-top: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-container {
+        padding-top: 12px;
+    }
+}
+
 
 /* **************************************************** 
 ** OUTROS
 **************************************************** */
+
 #home-quote {
     background: url('../img/bg-quote.jpg') center center;
     background-size: cover;
@@ -158,6 +376,7 @@ svg defs clipPath circle {
 /* **************************************************** 
 ** MEDIA QUERIES
 **************************************************** */
+
 @media (max-width: 767px) {
 
     .carousel-control-prev-icon,
@@ -165,7 +384,7 @@ svg defs clipPath circle {
         width: var(--p-carousel-control-size);
         height: var(--p-carousel-control-size);
     }
-    
+
     .carousel-indicators li {
         height: var(--p-dot-size);
         width: var(--p-dot-size);
@@ -178,7 +397,7 @@ svg defs clipPath circle {
     body {
         padding-top: 0px;
     }
-    
+
     header {
         margin-top: -40px;
     }
@@ -187,6 +406,7 @@ svg defs clipPath circle {
         position: relative;
     }
 }
+
 @media (min-width: 768px) {
     .navbar-collapse {
         flex-grow: 0;
