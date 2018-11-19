@@ -799,6 +799,27 @@ header .carousel-item {
 ** FOOTER
 **************************************************** */
 footer {
+    font-family: var(--font);
+}
+
+footer a {
+    color: #868e96 !important;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #fff !important;
+}
+
+footer a.btn{
+    text-decoration: none;
+}
+
+footer .copy {
+    background-color: #000000;
+    font-family: var(--font-tech);
+    font-weight: 100;
+    font-size: 14px;
 }
 
 /* **************************************************** 
@@ -808,6 +829,21 @@ footer {
 #home-quote {
     background: url('../img/bg-quote.jpg') center center;
     background-size: cover;
+}
+
+.crimson {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    color: #08FBE8;
+}
+.crimson:first-child {
+    margin-left: .5rem;
+}
+.crimson::before {
+    content: attr(data-c);
+    color: #FB0853;
+    margin-left: .2rem;
+    margin-right: -.77rem;
 }
 
 /* **************************************************** 
