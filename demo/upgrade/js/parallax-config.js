@@ -17,21 +17,18 @@ function parallaxScroll(){
         var pbg1 = -10, p1 = 'bottom',
             pbg2 = 100, p2 = 'top',
             pbg3 = -265, p3 = 'bottom',
-            pbg4 = 500; p4 = 'top',
-        console.log('lg');
+            pbg4 = 500, p4 = 'top';
     } else {
         if (md.matches) {
             var pbg1 = -400, p1 = 'bottom',
-                pbg2 = 300, p2 = 'bottom',
+                pbg2 = 100, p2 = 'top',
                 pbg3 = -390, p3 = 'bottom',
                 pbg4 = 5000, p4 = 'top';
-            console.log('md');
         } else {
-            var pbg1 = -100, p1 = 'top',
+            var pbg1 = 100, p1 = 'top',
                 pbg2 = 200, p2 = 'top',
                 pbg3 = -530, p3 = 'bottom',
-                pbg4 = 5000; p4 = 'top',
-            console.log('sm');
+                pbg4 = 5000, p4 = 'bottom';
         }
     }
     
