@@ -4,7 +4,7 @@ $.extend($.easing,
         return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
     }
 });
-// fim do plugin
+// fim do plugin 
 
 $("a").click(function(e){
    e.preventDefault();
