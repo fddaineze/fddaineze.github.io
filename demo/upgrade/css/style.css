@@ -939,7 +939,7 @@ footer .copy {
         text-align: center;
     }
     .nav-item:first-child {
-        margin-top: .2em;
+        margin-top: 1rem;
     }
     .nav-item:last-child {
         border-bottom: 1px solid #222;
