@@ -4,8 +4,6 @@ $.extend($.easing,
         return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
     }
 });
-// fim do plugin 
-
 $("a").click(function(e){
    e.preventDefault();
    
@@ -13,7 +11,7 @@ $("a").click(function(e){
    var anc = this.hash;
     
    if (md.matches) {
-      var adjust = 66;
+      var adjust = 62;
    } else {
       var adjust = 0;
    }

@@ -79,6 +79,35 @@ body {
     border-color: var(--danger);
 }
 
+/******************************************************/
+
+.carousel-caption h3 .btn-outline-danger {
+    color: #fff;
+    border-color: #fff;
+    z-index: 15;
+    margin-top: 2em;
+}
+
+.carousel-caption h3 .btn-outline-danger:not([disabled]):not(.disabled):active,
+.carousel-caption h3 .btn-outline-danger:not([disabled]):not(.disabled).active,
+.show > .carousel-caption h3 .btn-outline-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(221, 221, 221, 0.5);
+}
+
+.carousel-caption h3 .btn-outline-danger:focus,
+.carousel-caption h3 .btn-outline-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(221, 221, 221, 0.5);
+}
+
+.carousel-caption h3 .btn-outline-danger:hover {
+    color: #fff;
+    background-color: var(--danger);
+    border-color: #fff;
+}
+
 /* **************************************************** 
 ** NAVBAR
 **************************************************** */
@@ -224,20 +253,31 @@ header .carousel-item {
     height: var(--header-height);
     font-family: var(--font);
     color: rgba(255, 255, 255, 0.65);
+    background-color:rgba(0,0,0,.6);
     text-shadow: 0 2px 4px rgba(0, 0, 0, .5),
         0 4px 8px rgba(0, 0, 0, .5);
 }
 
 .carousel-caption h3 {
     font-family: var(--font-tech);
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     font-size: 3rem;
+}
+.carousel-caption h3 btn {
+    text-align: left;
+    text-shadow: none;
+}
+
+.carousel-caption h3 span {
+    font-size: 2rem;
+    display: block;
 }
 
 @media (max-width: 767px) {
