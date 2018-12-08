@@ -11,7 +11,7 @@ $site_url = ''; // URL do Site
 $host_smtp = 'smtp.gmail.com'; // HOST SMTP Ex: smtp.domain.com.br
 $host_port = '465'; // Porta do Host
 
-// Variáveis do Formulário
+// Variáveis do Formulário 
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
