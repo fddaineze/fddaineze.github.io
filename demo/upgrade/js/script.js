@@ -4,7 +4,7 @@ $.extend($.easing,
         return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
     }
 });
-$("a").click(function(e){
+$(".interno").click(function(e){
    e.preventDefault();
    
    const md = window.matchMedia( "(min-width: 768px)" );

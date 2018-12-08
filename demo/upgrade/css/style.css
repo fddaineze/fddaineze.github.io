@@ -49,6 +49,10 @@ body {
     text-transform: uppercase;
 }
 
+.hide {
+    display: none;
+}
+
 /* **************************************************** 
 ** BOTÕES
 **************************************************** */
@@ -954,6 +958,75 @@ footer .copy {
     margin-right: -.77rem;
 }
 
+/* **************************************************** 
+** FORMULARIO 
+**************************************************** */
+
+.formphp {
+    text-align:center;
+    font-family:var(--font-tech);
+    color:var(--color-base);
+}
+.formphp label {
+    width:100%;
+    text-align:left;
+    margin-top:.7em;
+}
+.formphp input, .formphp textarea {
+    width:100%;
+    color:#fff;
+    background-color:rgba(0, 0, 0, .5);
+    border:1px solid var(--danger);
+    border-radius:4px;
+    padding:7px 15px;
+    font-family:var(--font-tech);
+}
+.formphp textarea {
+    min-height:140px;
+}
+.formphp textarea:focus,
+.formphp textarea.focus,
+.formphp input:focus,
+.formphp input.focus {
+    box-shadow:0 0 0 0.2rem rgba(200, 20, 10, 0.5);
+    border:1px solid var(--danger);
+    outline:none;
+}
+
+.formphp .btn-outline-danger {
+    display:inline-block;
+    color:#fff;
+    border-color:#fff;
+    z-index:15;
+    min-width:150px;
+}
+
+.formphp .btn-outline-danger:not([disabled]):not(.disabled):active,
+.formphp .btn-outline-danger:not([disabled]):not(.disabled).active,
+.show > .formphp .btn-outline-danger.dropdown-toggle {
+    color:#fff;
+    background-color:#1d1d1d;
+    border-color:#fff;
+    box-shadow:0 0 0 0.2rem rgba(221, 221, 221, 0.5);
+}
+
+.formphp .btn-outline-danger:focus,
+.formphp .btn-outline-danger.focus {
+    box-shadow:0 0 0 0.2rem rgba(221, 221, 221, 0.5);
+}
+
+.formphp .btn-outline-danger:hover {
+    color:#fff;
+    background-color:var(--danger);
+    border-color:#fff;
+}
+
+#form-erro {
+    color:#f64540;
+}
+#form-send {
+    color:#31aa39;
+}
 
 /* **************************************************** 
 ** MEDIA QUERIES 
