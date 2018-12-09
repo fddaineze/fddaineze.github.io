@@ -1228,7 +1228,7 @@ footer .copy {
 }
 @media (max-width: 767px) {
     .prod-opcoes-box-space {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; 
     }
 }
 @media (min-width: 768px) {
