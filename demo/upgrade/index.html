@@ -52,35 +52,243 @@ Basic Page Needs
 <body id="top">
     
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-MODAL
+MODAL's
 -->
-<!--  Modal   -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+<!--  Modal - Primeiro Produto   -->
+    <div class="modal fade" id="modalCompraA" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+<!-- NOME DO PRIMEIRO PRODUTO -->
+                    <h5 class="modal-title" id="modalLoginTitulo">Primeiro Produto</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="loginEmail">Email</label>
-                            <input type="email" class="form-control" id="loginEmail">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="prod-opcoes-box prod-opcoes-box-space">
+                                <p class="sub-titulo">Opção 1</p>
+                                <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
+                                
+<!-- Link de Compra MERCADO PAGO - PRIMEIRO PRODUTO -->
+                                <a class="botao-mercadopago" href="https://www.mercadopago.com/mlb/checkout/start?pref_id=327984002-1fb67728-b406-474b-a55b-862f4adcd300" target="_blank">
+                                    Comprar
+                                </a>
+                                
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="loginSenha">Senha</label>
-                            <input type="password" class="form-control" id="loginSenha">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="prod-opcoes-box prod-opcoes-box-space">
+                                <p class="sub-titulo">Opção 2</p>
+                                <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
+                                
+<!-- Link de Compra PAGSEGURO - PRIMEIRO PRODUTO -->
+                                <a class="botao-pagseguro" href="https://pag.ae/7UdEXf-Ep" target="_blank">
+                                    Comprar
+                                </a>
+                                
+                            </div> 
                         </div>
-                        <button type="submit" class="btn btn-danger">Entrar na Conta</button>
-                        <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
-                    </form>
+                        <div class="offset-sm-3 col-sm-6 offset-md-0 col-md-4"> 
+                            <div class="prod-opcoes-box">
+                                <p class="sub-titulo">Opção 3</p>
+                                <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                                
+<!-- Link de Compra PAYPAL - PRIMEIRO PRODUTO -->
+                                <a class="botao-mercadopago" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=XWHH87CUR7SEC&lc=BR&item_name=FPS%20BOOSTER&amount=49%2e99&currency_code=BRL&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynow_SM%2egif%3aNonHosted" target="_blank">
+                                    Comprar
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-xs-12 prod-download">
+                            <p>Ao clicar em comprar, você afirma que está de acordo com os <a href="#" data-toggle="modal" data-target="#modalTermoCompra">termos de compra</a> do site</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- Fecha Modal  -->
+
+<!--  Modal - Segundo Produto   -->
+<div class="modal fade" id="modalCompraB" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+<!-- NOME DO SEGUNDO PRODUTO -->
+                <h5 class="modal-title" id="modalLoginTitulo">Segundo Produto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 1</p>
+                            <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
+                            
+<!-- Link de Compra MERCADO PAGO - SEGUNDO PRODUTO -->
+                            <a class="botao-mercadopago" href="https://www.mercadopago.com/mlb/checkout/start?pref_id=327984002-1fb67728-b406-474b-a55b-862f4adcd300" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 2</p>
+                            <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
+                            
+<!-- Link de Compra PAGSEGURO - SEGUNDO PRODUTO -->
+                            <a class="botao-pagseguro" href="https://pag.ae/7UdEXf-Ep" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div> 
+                    </div>
+                    <div class="offset-sm-3 col-sm-6 offset-md-0 col-md-4"> 
+                        <div class="prod-opcoes-box">
+                            <p class="sub-titulo">Opção 3</p>
+                            <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                            
+<!-- Link de Compra PAYPAL - SEGUNDO PRODUTO -->
+                            <a class="botao-mercadopago" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=XWHH87CUR7SEC&lc=BR&item_name=FPS%20BOOSTER&amount=49%2e99&currency_code=BRL&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynow_SM%2egif%3aNonHosted" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-xs-12 prod-download">
+                        <p>Ao clicar em comprar, você afirma que está de acordo com os <a href="#" data-toggle="modal" data-target="#modalTermoCompra">termos de compra</a> do site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fecha Modal  -->
+
+<!--  Modal - Terceiro Produto   -->
+<div class="modal fade" id="modalCompraC" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+<!-- NOME DO TERCEIRO PRODUTO -->
+                <h5 class="modal-title" id="modalLoginTitulo">Terceiro Produto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 1</p>
+                            <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
+                            
+<!-- Link de Compra MERCADO PAGO - TERCEIRO PRODUTO -->
+                            <a class="botao-mercadopago" href="https://www.mercadopago.com/mlb/checkout/start?pref_id=327984002-1fb67728-b406-474b-a55b-862f4adcd300" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 2</p>
+                            <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
+                            
+<!-- Link de Compra PAGSEGURO - TERCEIRO PRODUTO -->
+                            <a class="botao-pagseguro" href="https://pag.ae/7UdEXf-Ep" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div> 
+                    </div>
+                    <div class="offset-sm-3 col-sm-6 offset-md-0 col-md-4"> 
+                        <div class="prod-opcoes-box">
+                            <p class="sub-titulo">Opção 3</p>
+                            <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                            
+<!-- Link de Compra PAYPAL - TERCEIRO PRODUTO -->
+                            <a class="botao-mercadopago" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=XWHH87CUR7SEC&lc=BR&item_name=FPS%20BOOSTER&amount=49%2e99&currency_code=BRL&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_buynow_SM%2egif%3aNonHosted" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-xs-12 prod-download">
+                        <p>Ao clicar em comprar, você afirma que está de acordo com os <a href="#" data-toggle="modal" data-target="#modalTermoCompra">termos de compra</a> do site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fecha Modal  -->
+
+<!--  Modal - Termos de Compra  -->
+<div class="modal fade" id="modalTermoCompra" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+<!-- NOME DO TERMOS DE COMPRA -->
+                <h5 class="modal-title" id="modalLoginTitulo">Termos de Compra</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-12 prod-download">
+                    <p>Termos de compra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fecha Modal  -->
+
+<!--  Modal - Promoções  -->
+<div class="modal fade" id="modalPromocao" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+<!-- NOME DO PROMÇÕES -->
+                <h5 class="modal-title" id="modalLoginTitulo">Promoções</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-12 prod-download">
+                    <p>Promoções</p>
+                    <div class="row" style="justify-content: center;">
+                        <a href="#" class="cardbox">
+                            <p class="card facebook">
+                                Facebook
+                            </p>
+                        </a>
+                        <a href="#" class="cardbox">
+                            <p class="card twitter">
+                                Twitter
+                            </p>   
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Fecha Modal  -->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -194,7 +402,7 @@ EXTRA HEADER
                 <h2 class="h2 title-danger d-block pb-2">quer ganhar itens em seus jogos favoritos?</h2>
                 <p class="title-desc pb-2">em nossas redes sociais rola sorteio de jogos e itens, não fique de fora! :)</p>
 
-                <a class="btn btn-outline-danger ml-md-2" href="#">SAIBA MAIS</a>
+                <a class="btn btn-outline-danger ml-md-2" href="#" data-toggle="modal" data-target="#modalPromocao">SAIBA MAIS</a>
             </div>
         </div>
     </section>
@@ -233,7 +441,7 @@ PRODUTOS
                             <p class="texto">Opção número #3 padrão</p>
                             <p class="texto">Opção número #4 com texto longo</p>
                         </div>
-                        <p class="prod-comprar">Comprar</p>
+                        <a href="#" data-toggle="modal" data-target="#modalCompraA"><p class="prod-comprar">Comprar</p></a>
                     </div>
                 </div>
 
@@ -256,7 +464,7 @@ PRODUTOS
                             <p class="texto">Opção número #3 padrao</p>
                             <p class="texto"><i class="fas fa-times"></i> Opção número #4 com texto longo</p>
                         </div>
-                        <p class="prod-comprar">Comprar</p>
+                        <a href="#" data-toggle="modal" data-target="#modalCompraB"><p class="prod-comprar">Comprar</p></a>
                     </div>
                 </div>
 
@@ -276,7 +484,7 @@ PRODUTOS
                             <p class="texto">Opção número #3 padrao</p>
                             <p class="texto">Opção número #4 com texto longo</p>
                         </div>
-                        <p class="prod-comprar">Comprar</p>
+                        <a href="#" data-toggle="modal" data-target="#modalCompraC"><p class="prod-comprar">Comprar</p></a>
                     </div>
                 </div>
 
