@@ -5,7 +5,7 @@ $(document).ready(function () {
     $(atual+'-nav').addClass('active');
     $(atual+'-ball').addClass('active');
     
-    // Chama o script de maquina de escrever
+    // Chama o script de maquina de escrever 
     const titulo = document.querySelector('.write');
     typeWriter(titulo);
     
