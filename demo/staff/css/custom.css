@@ -144,3 +144,8 @@ body {
   -ms-grid-rows: 4fr 1fr 1fr;
   grid-template-rows: 4fr 1fr 1fr;
 }
+@media only screen and (max-width : 767px) {
+  .area {
+    width: 100%;
+  }
+}
