@@ -46,6 +46,7 @@ a, a:visited, a:hover { color:var(--verm) !important; }
   position: fixed;
   top:0;
   left:0;
+  z-index: 1;
 }
 #menuToggle {
   display: block;
@@ -115,11 +116,13 @@ a, a:visited, a:hover { color:var(--verm) !important; }
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
+
+  max-height: calc(100vh + 53px);
+  overflow: auto;
   
   background: #1d1d1d;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -152,6 +155,9 @@ body {
   color: var(--padr);
   position: relative;
   z-index: 9995;
+}
+.blur {
+  transition: .8s;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -169,6 +175,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index:-1;
 }
 .capa {
   background-color: #111;
