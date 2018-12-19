@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans|Overpass+Mono|La+Belle+Aurore');
 
-:root { 
+:root {
   --font-serif: 'Bitter', serif;
   --font-sans: 'open sans', 'segoe ui', sans-serif;
   --font-mono: 'Overpass Mono', monospace;
