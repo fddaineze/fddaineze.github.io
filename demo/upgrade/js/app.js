@@ -129,7 +129,7 @@ $('.formphp').on('submit', function() {
 // --- ATENÇÃO!! VOCÊ PRECISA ATUALIZAR SEU EMAIL AQUI
 // --- ATENÇÃO!! VOCÊ PRECISA ATUALIZAR SEU EMAIL AQUI
 
-    var emailContato = "contato@upgrade.com.br"; // Escreva aqui o seu e-mail
+    var emailContato = "lojaupgradeoficial@gmail.com"; // Escreva aqui o seu e-mail
     
 // --- ATENÇÃO!! VOCÊ PRECISA ATUALIZAR SEU EMAIL AQUI
 // --- ATENÇÃO!! VOCÊ PRECISA ATUALIZAR SEU EMAIL AQUI

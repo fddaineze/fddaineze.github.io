@@ -45,3 +45,15 @@ IMG -->
 NOME -->
 INSCRITOS -->
 VISUALIZAÇÕES -->
+
+========================================================================
+Para configurar o FORMULARIO DE CONTATO, procure no app.js por:
+========================================================================
+
+// --- ATENÇÃO!! VOCÊ PRECISA ATUALIZAR SEU EMAIL AQUI
+
+==========================================
+E no enviar.php por (logo no inicio):
+==========================================
+
+// Mudar Aqui
