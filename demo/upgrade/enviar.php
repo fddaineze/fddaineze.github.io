@@ -8,10 +8,14 @@ $email_pass = ''; // Senha do e-mail
 $site_name = ''; // Nome do Site
 $site_url = ''; // URL do Site
 
-$host_smtp = 'smtp.gmail.com'; // HOST SMTP Ex: smtp.domain.com.br
-$host_port = '465'; // Porta do Host
+$host_smtp = 'smtp.gmail.com'; // HOST SMTP Ex: smtp.domain.com.br (já está no padrão gmail)
+$host_port = '465'; // Porta do Host (já está no padrão gmail)
 
-// Variáveis do Formulário 
+// -----------------------------------------------
+// Não mudar a partir daqui
+// -----------------------------------------------
+
+// Variáveis do Formulário
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
@@ -21,8 +25,6 @@ $mensagem = $_POST['mensagem'];
 // Conteúdo do Formulário
 
 $body_content = "De: $nome \n E-mail: $email \n Telefone: $telefone \n Mensagem: $mensagem";
-
-// Não mudar a partir daqui
 
 if ($_POST['leaveblank'] != '' or $_POST['dontchange'] != 'http://') {
 
