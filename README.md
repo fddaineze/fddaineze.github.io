@@ -1,4 +1,6 @@
-### Site 
+### Site (Offline)
+**Acompanhar por daineze.dev**
+
 **Estrutura**
 * HTML5 - <https://www.w3.org/TR/html5/>
 * CSS - <https://www.w3.org/TR/CSS/>
