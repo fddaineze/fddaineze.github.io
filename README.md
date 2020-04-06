@@ -1,4 +1,4 @@
-![last commit badge](https://badgen.net/github/last-commit/fddaineze/fddaineze.github.io) ![commits badge](https://badgen.net/github/commits/fddaineze/fddaineze.github.io) ![license badge](https://badgen.net/github/license/fddaineze/fddaineze.github.io)
+![last commit badge](https://badgen.net/github/last-commit/fddaineze/fddaineze.github.io) ![commits badge](https://badgen.net/github/commits/fddaineze/fddaineze.github.io) ![license badge](https://badgen.net/github/license/fddaineze/fddaineze.github.io) ![github badge](https://badgen.net/badge/icon/github?icon=github&label)
 
 ### Site (versão base)
 **Acompanhar por daineze.dev**
