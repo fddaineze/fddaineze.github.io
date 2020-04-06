@@ -1,4 +1,6 @@
-### Site (Offline)
+![last commit badge](https://badgen.net/github/last-commit/fddaineze/fddaineze.github.io) ![commits badge](https://badgen.net/github/commits/fddaineze/fddaineze.github.io) ![license badge](https://badgen.net/github/license/fddaineze/fddaineze.github.io)
+
+### Site (versão base)
 **Acompanhar por daineze.dev**
 
 **Estrutura**
@@ -11,8 +13,8 @@
 **Conceito** 
 * anaglifo 3d (cores de destaque, azul/vermelho) 
 
-Para acessar o site, [clique aqui](https://jimmyfilips.github.io/)<br>
-ou acesse <code>jimmyfilips.github.io</code>
+Para acessar o site, [clique aqui](https://fddaineze.github.io/)<br>
+ou acesse <code>fddaineze.github.io</code>
 
 Made by [jimmyfilips](https://github.com/jimmyfilips/) (under [MIT License](https://github.com/jimmyfilips/jimmyfilips.github.io/blob/master/LICENSE))
 Copyright © 2018 [jimmyfilips](https://github.com/jimmyfilips/)
